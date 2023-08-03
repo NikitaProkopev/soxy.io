@@ -1,0 +1,39 @@
+@font-face {
+    font-family: "Moderat";
+    src: url("../assets/fonts/Moderat/Moderat-Extended-Bold.ttf") format("truetype");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Moderat";
+    src: url("../assets/fonts/Moderat/Moderat-Extended-Black.ttf") format("truetype");
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: "Moderat";
+    src: url("../assets/fonts/Moderat/Moderat-Extended-Black-Italic.ttf") format("truetype");
+    font-weight: 900;
+    font-style: italic;
+}
+
+
+@font-face {
+    font-family: "Moderat";
+    src: url("../assets/fonts/Moderat/Moderat-Extended-Regular.ttf") format("truetype");
+    font-weight: 400;
+}
+
+
+
+
+@font-face {
+    font-family: 'Zodiak';
+    src: url("../assets/fonts/Zodiak/Zodiak-Regular.otf");
+}
+
+@font-face {
+    font-family: 'Zodiak';
+    src: url("../assets/fonts/Zodiak/Zodiak-Bold.otf");
+    font-weight: 540;
+}

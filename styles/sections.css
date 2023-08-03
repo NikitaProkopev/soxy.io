@@ -1,0 +1,263 @@
+.sections-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.sections {
+    width: 1240px;
+}
+
+section {
+    margin-bottom: 100px;
+}
+
+section img {
+    width: 100%;
+}
+
+.first-section {
+    display: flex;
+    gap: var(--default-gap);
+}
+
+.first-section .left-side {
+    display: flex;
+    gap: var(--default-gap);
+}
+
+.first-section .left-side div, .first-section .left-side div img {
+    width: 340px;
+}
+
+.section-text {
+    margin-top: 12px;
+}
+
+.title-text {
+    margin-top: 16px;
+    font-weight: 400;
+}
+
+.right-side > div {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.right-side div img {
+    max-width: 180px;
+}
+
+.right-side {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.right-side .section-text {
+    font-size: 18px;
+}
+
+.category-separator .separator {
+    width: 100%;
+    height: 1px;
+    background: #DCDCDC;
+}
+
+.category-separator {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.category-separator .category-text {
+    font-family: 'Zodiak', sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 540;
+    line-height: normal;
+}
+
+.second-section > .scrolling-content {
+    display: flex;
+    gap: var(--default-gap);
+    overflow-x: hidden;
+    padding-left: var(--default-gap);
+    padding-right: var(--default-gap);
+}
+
+.second-section > .scrolling-content > div {
+    min-width: 364px;
+}
+
+.second-section > .scrolling-content  > div > img {
+    width: 100%;
+    height: 447px;
+}
+#second-section-wrapper {
+    height: 530px;
+}
+
+.scrolling-section-wrapper {
+    width: 100%;
+    position: absolute;
+}
+
+.third-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--default-gap);
+}
+
+.third-section .title-text {
+    font-weight: 500;
+}
+
+.product-name, .product-price {
+    margin-top: 8px;
+}
+
+.product-price {
+    font-weight: 500;
+}
+
+.fourth-section {
+    display: flex;
+    gap: var(--default-gap);
+}
+
+.fourth-section .title-text, .fourth-section h1 {
+    text-align: center;
+}
+
+.fourth-section h1 {
+    margin-top: 16px;
+    font-size: 26px;
+}
+
+.fifth-section img {
+    width: 150px;
+    height: 108px;
+}
+
+.fifth-section .scrolling-content {
+    display: flex;
+    background-color: var(--light-gray);
+    overflow: hidden;
+    gap: var(--default-gap);
+    padding: 46px var(--default-gap);
+}
+
+.fifth-section .scrolling-content > div {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    min-width: 450px;
+}
+
+.fifth-section .scrolling-content h1 {
+    font-size: 18px;
+    margin-top: 12px;
+}
+
+.fifth-section .scrolling-content .title-text {
+    margin-top: 0;
+}
+
+#fifth-section-wrapper {
+    height: 200px;
+}
+
+.sixth-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--default-gap);
+}
+
+.sixth-section h1 {
+    padding-top: 12px;
+}
+
+.seventh-section {
+    display: grid;
+    gap: var(--default-gap);
+    grid-template-columns: auto auto;
+}
+
+.seventh-section .left-side h1 {
+    font-size: 26px;
+    margin-top: 16px;
+}
+
+.seventh-section .left-side h1, .seventh-section .left-side .title-text {
+    text-align: center;
+}
+
+.seventh-section .left-side {
+    width: 786px;
+}
+
+.seventh-section .right-side > div {
+    flex-direction: column;
+}
+
+.seventh-section .right-side div img {
+    max-width: initial;
+}
+
+.seventh-section {
+    margin-bottom: 134px;
+}
+
+.tranding-text {
+    white-space: nowrap;
+}
+
+.tranding-separator {
+    margin-bottom: 82px;
+}
+
+.eighth-section .separator {
+    margin: 24px 0;
+    height: 1px;
+    background: #DCDCDC;
+}
+
+.eighth-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--default-gap);
+}
+
+.tranding-item {
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+}
+
+.tranding-item a {
+    text-decoration: none;
+    font-family: 'Moderat', sans-serif;
+}
+
+.tranding-item h1{
+    font-family: 'Moderat', sans-serif;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 115%; /* 27.6px */
+}
+
+.tranding-item p, .tranding-item a {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 160.5%; /* 28.89px */
+}
+
+.tranding-item p {
+    font-family: 'Zodiak', sans-serif;
+}
+
+
+
+
