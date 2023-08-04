@@ -3,15 +3,40 @@
     padding: 0;
     margin: 0;
     font-family: 'Moderat', sans-serif;
+    font-size: 16px;
 }
 
 :root {
     --light-gray: #F7F7F7;
-    --default-gap: 36px;
+    --default-gap: 2.25em;
 }
 
 h1 {
     font-family: 'Zodiak', sans-serif;
-    font-size: 20px;
+    font-size: 1.25em;
     font-weight: 540;
+}
+
+@media (max-width: 1390px) {
+    * {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1200px) {
+    * {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 1000px) {
+    * {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 850px) {
+    * {
+        font-size: 9px;
+    }
 }

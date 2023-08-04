@@ -4,11 +4,11 @@
 }
 
 .sections {
-    width: 1240px;
+    width: 77.5em; /* 1240px */
 }
 
 section {
-    margin-bottom: 100px;
+    margin-bottom: 6.25em; /* 100px */
 }
 
 section img {
@@ -26,36 +26,36 @@ section img {
 }
 
 .first-section .left-side div, .first-section .left-side div img {
-    width: 340px;
+    width: 21.25em /* 340px */;
 }
 
 .section-text {
-    margin-top: 12px;
+    margin-top: 0.75em;
 }
 
 .title-text {
-    margin-top: 16px;
+    margin-top: 1em;
     font-weight: 400;
 }
 
 .right-side > div {
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 1em;
 }
 
 .right-side div img {
-    max-width: 180px;
+    max-width: 11.25em;
 }
 
 .right-side {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 1.5em;
 }
 
 .right-side .section-text {
-    font-size: 18px;
+    font-size: 1.125em;
 }
 
 .category-separator .separator {
@@ -66,14 +66,14 @@ section img {
 
 .category-separator {
     display: flex;
-    gap: 24px;
+    gap: 1.5em;
     align-items: center;
-    margin-bottom: 60px;
+    margin-bottom: 3.75em;
 }
 
 .category-separator .category-text {
     font-family: 'Zodiak', sans-serif;
-    font-size: 32px;
+    font-size: 2em;
     font-style: normal;
     font-weight: 540;
     line-height: normal;
@@ -88,15 +88,15 @@ section img {
 }
 
 .second-section > .scrolling-content > div {
-    min-width: 364px;
+    min-width: 22.75em; /* 364px */
 }
 
 .second-section > .scrolling-content  > div > img {
     width: 100%;
-    height: 447px;
+    height: 27.9375em; /* 447px */
 }
 #second-section-wrapper {
-    height: 530px;
+    height: 33.125em /* 530px */
 }
 
 .scrolling-section-wrapper {
@@ -104,18 +104,18 @@ section img {
     position: absolute;
 }
 
-.third-section {
+.third-section, .ninth-section {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: var(--default-gap);
 }
 
-.third-section .title-text {
+.third-section .title-text, .ninth-section .title-text {
     font-weight: 500;
 }
 
 .product-name, .product-price {
-    margin-top: 8px;
+    margin-top: 0.5em;
 }
 
 .product-price {
@@ -132,13 +132,13 @@ section img {
 }
 
 .fourth-section h1 {
-    margin-top: 16px;
-    font-size: 26px;
+    margin-top: 1em;
+    font-size: 1.625em; /* 26px */
 }
 
 .fifth-section img {
-    width: 150px;
-    height: 108px;
+    width: 9.375em; /* 150px */
+    height: 6.75em;
 }
 
 .fifth-section .scrolling-content {
@@ -146,19 +146,19 @@ section img {
     background-color: var(--light-gray);
     overflow: hidden;
     gap: var(--default-gap);
-    padding: 46px var(--default-gap);
+    padding: 2.875em var(--default-gap); /* 46px */
 }
 
 .fifth-section .scrolling-content > div {
     display: flex;
-    gap: 16px;
+    gap: 1em;
     align-items: center;
-    min-width: 450px;
+    min-width: 28.125em; /* 450px */
 }
 
 .fifth-section .scrolling-content h1 {
-    font-size: 18px;
-    margin-top: 12px;
+    font-size: 1.125em;
+    margin-top: 0.75em;
 }
 
 .fifth-section .scrolling-content .title-text {
@@ -166,7 +166,7 @@ section img {
 }
 
 #fifth-section-wrapper {
-    height: 200px;
+    height: 12.5em; /* 200px */
 }
 
 .sixth-section {
@@ -176,7 +176,7 @@ section img {
 }
 
 .sixth-section h1 {
-    padding-top: 12px;
+    padding-top: 0.75em;
 }
 
 .seventh-section {
@@ -186,8 +186,8 @@ section img {
 }
 
 .seventh-section .left-side h1 {
-    font-size: 26px;
-    margin-top: 16px;
+    font-size: 1.625em;
+    margin-top: 1em;
 }
 
 .seventh-section .left-side h1, .seventh-section .left-side .title-text {
@@ -195,7 +195,7 @@ section img {
 }
 
 .seventh-section .left-side {
-    width: 786px;
+    width: 49.125em /* 786px */
 }
 
 .seventh-section .right-side > div {
@@ -207,7 +207,7 @@ section img {
 }
 
 .seventh-section {
-    margin-bottom: 134px;
+    margin-bottom: 8.375em /* 134px */
 }
 
 .tranding-text {
@@ -215,11 +215,11 @@ section img {
 }
 
 .tranding-separator {
-    margin-bottom: 82px;
+    margin-bottom: 5.125em; /* 82px */
 }
 
 .eighth-section .separator {
-    margin: 24px 0;
+    margin: 1.5em 0;
     height: 1px;
     background: #DCDCDC;
 }
@@ -232,7 +232,7 @@ section img {
 
 .tranding-item {
     display: flex;
-    gap: 12px;
+    gap: 0.75em;
     flex-direction: column;
 }
 
@@ -243,13 +243,13 @@ section img {
 
 .tranding-item h1{
     font-family: 'Moderat', sans-serif;
-    font-size: 24px;
+    font-size: 1.5em;
     font-weight: 900;
     line-height: 115%; /* 27.6px */
 }
 
 .tranding-item p, .tranding-item a {
-    font-size: 18px;
+    font-size: 1.125em;
     font-weight: 400;
     line-height: 160.5%; /* 28.89px */
 }
@@ -257,6 +257,85 @@ section img {
 .tranding-item p {
     font-family: 'Zodiak', sans-serif;
 }
+
+.ninth-section {
+    margin-bottom: 5em;
+}
+
+.ninth-section-category-separator {
+    margin-bottom: 4.1875em; /* 67px */
+}
+
+.brands-section > table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 4.75em /* 76px */;
+}
+
+.brands-section > table img {
+    width: initial;
+    max-width: 15.625em;
+}
+
+.brands-section > table tr td > div{
+    height: 13.125em; /* 210px */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brands-section > table tr td {
+    border: 1px solid #DBDBDB;
+}
+
+.brands-section > table tr td:first-child {
+    border-left: none;
+}
+
+.brands-section > table tr:first-child td {
+    border-top: none;
+}
+
+.brands-section > table tr td:last-child {
+    border-right: none;
+}
+
+.brands-section > table tr:last-child td {
+    border-bottom: none;
+}
+
+.all-brands-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4.9375em; /* 79px */
+}
+
+
+.all-brands-wrapper .all-brands {
+    border: none;
+    background: #111;
+    padding: 0.875em /* 14px */ 2.5em;
+    color: white;
+}
+
+@media (max-width: 1390px) {
+    .brands-section > table tr td > div {
+        height: 10em;
+    }
+}
+
+@media (max-width: 1200px) {
+    .brands-section > table img {
+        transform: scale(0.85);
+    }
+}
+
+@media (max-width: 1000px) {
+    .brands-section > table img {
+        transform: scale(0.7);
+    }
+}
+
 
 
 
