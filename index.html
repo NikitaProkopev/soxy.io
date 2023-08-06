@@ -2,54 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/fonts.css">
-    <link rel="stylesheet" href="styles/sections.css">
-    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-    <header class="header">
-        <div class="header-wrapper">
-            <div class="first-part">
-                <div class="header-logo">
-                    soxy
-                </div>
-                <div class="header-search">
-                    <div class="search-icon">
-                        <img src="assets/icons/searh.svg"/>
-                    </div>
-                    <input type="text" placeholder="Search for a brand or product...">
-                </div>
-                <div class="header-navigation">
-                    <nav>
-                        <div class="navigation-wrapper">
-                            <a href="#" class="navigation-item">Shop</a>
-                            <a href="#" class="navigation-item">Magazine</a>
-                            <a href="#" class="navigation-item">About</a>
-                            <a href="#" class="navigation-item">Help</a>
-                        </div>
-                    </nav>
-                    <div class="navigation-bag">
-                        <img src="assets/icons/bag.svg"/>
-                    </div>
-                </div>
-            </div>
-            <div class="separator"></div>
-            <div class="second-part">
-                <div class="header-categories">
-                    <a href="#" class="navigation-item">Women</a>
-                    <a href="#" class="navigation-item">Men</a>
-                    <a href="#" class="navigation-item">Shoes</a>
-                    <a href="#" class="navigation-item">Bags</a>
-                    <a href="#" class="navigation-item">Home & Living</a>
-                    <a href="#" class="navigation-item">Beauty</a>
-                    <a href="#" class="navigation-item">Kids</a>
-                    <a href="#" class="navigation-item">Brands</a>
-                </div>
-            </div>
-        </div>
-    </header>
+    <include src="./header.html"></include>
     <div class="sections-wrapper">
         <div class="sections">
             <section class="first-section">
@@ -406,49 +364,14 @@
                         <td><div><img src="./assets/images/fear-of-god.png" alt="images"></div></td>
                     </tr>
                 </table>
-                <div class="all-brands-wrapper">
-                    <button class="all-brands">View all brands</button>
+                <div class="all-brands-wrapper bottom-button-wrapper">
+                    <button class="all-brands bottom-button">View all brands</button>
                 </div>
             </section>
         </div>
     </div>
-    <footer class="footer">
-        <div class="footer-wrapper">
-            <div>
-                <p class="footer-logo">Soxy</p>
-                <p class="subscribe-text">Subscribe to our newsletter</p>
-                <div class="subscribe-input-wrapper">
-                    <input type="text" placeholder="Insert your email">
-                    <button>Subscribe</button>
-                </div>
-            </div>
-            <div>
-                <nav class="footer-navigation">
-                    <div>
-                        <p class="footer-navigation-title">Our Company</p>
-                        <p class="footer-navigation-item">Our Team</p>
-                        <p class="footer-navigation-item">Company Vision</p>
-                        <p class="footer-navigation-item">Our History</p>
-                        <p class="footer-navigation-item">Investorys</p>
-                    </div>
-                    <div>
-                        <p class="footer-navigation-title">Our Company</p>
-                        <p class="footer-navigation-item">Our Team</p>
-                        <p class="footer-navigation-item">Company Vision</p>
-                        <p class="footer-navigation-item">Our History</p>
-                        <p class="footer-navigation-item">Investorys</p>
-                    </div>
-                    <div>
-                        <p class="footer-navigation-title">Our Company</p>
-                        <p class="footer-navigation-item">Our Team</p>
-                        <p class="footer-navigation-item">Company Vision</p>
-                        <p class="footer-navigation-item">Our History</p>
-                        <p class="footer-navigation-item">Investorys</p>
-                    </div>
-                </nav>
-            </div>
-        </div>
-    </footer>
+    <include src="./footer.html"></include>
     <script src="scripts/category-scrolling.js"></script>
+    <script src="scripts/include.js"></script>
 </body>
 </html>

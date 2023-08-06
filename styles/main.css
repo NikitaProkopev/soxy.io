@@ -305,17 +305,7 @@ section img {
 }
 
 .all-brands-wrapper {
-    display: flex;
-    justify-content: center;
     margin-bottom: 4.9375em; /* 79px */
-}
-
-
-.all-brands-wrapper .all-brands {
-    border: none;
-    background: #111;
-    padding: 0.875em /* 14px */ 2.5em;
-    color: white;
 }
 
 @media (max-width: 1390px) {

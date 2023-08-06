@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/fonts.css">
+    <link rel="stylesheet" href="styles/category.css">
+</head>
+<body>
+  <include src="./header.html"></include>
+  <div class="categories-page-wrapper">
+    <div>
+      <div class="categories-name">
+        <p>All</p>
+        <span>/</span>
+        <p>Woman</p>
+        <span>/</span>
+        <p class="active">Shoes</p>
+      </div>
+      <div class="categories-content">
+        <div class="categories-filter">
+          <div class="count-of-products">915 items</div>
+          <div class="applied-filters filter-group">
+            <p class="filter-title">Applied filters</p>
+            <div class="applied-filters-content" id="applied-filters-content">
+              <div class="woman">
+                <p>Woman</p>
+                <img src="./assets/icons/cross.svg" alt="cross"></div>
+              <div class="adidas">
+                <p>Adidas</p>
+                <img src="./assets/icons/cross.svg" alt="cross"></div>
+              <div class="color-1">
+                <p>Color 1</p>
+                <img src="./assets/icons/cross.svg" alt="cross"></div>
+            </div>
+          </div>
+          <div class="accessories filter-group filter-with-count">
+            <p class="filter-title filter-with-hiding">
+              <span>Accessories</span>
+              <img src="./assets/icons/chevron-down.svg" alt="chevron-down"/>
+            </p>
+            <div class="filter-group-content">
+              <div class="filtering-group">
+                <p class="name">Accessories</p>
+                <p class="count">10k</p>
+              </div>
+              <div class="filtering-group">
+                <p class="name">Bags</p>
+                <p class="count">6k</p>
+              </div>
+              <div class="filtering-group">
+                <p class="name">Clothing</p>
+                <p class="count">15k</p>
+              </div>
+              <div class="filtering-group">
+                <p class="name">Men’s Grooming</p>
+                <p class="count">118</p>
+              </div>
+              <div class="filtering-group">
+                <p class="name">Shoes</p>
+                <p class="count">7k</p>
+              </div>
+            </div>
+          </div>
+          <div class="brands filter-group filter-with-count">
+            <p class="filter-title filter-with-hiding">
+              <span>Brands</span>
+              <img src="./assets/icons/chevron-down.svg" alt="chevron-down"/>
+            </p>
+            <div>
+                <div class="brands-search">
+                  <img src="./assets/icons/searh.svg" alt="search">
+                  <input type="text" placeholder="Search">
+                </div>
+              <div class="filter-group-content">
+                <div class="filtering-group">
+                    <p class="name">ASOS Curve</p>
+                    <p class="count">407</p>
+                  </div>
+                <div class="filtering-group">
+                  <p class="name">ASOS Design</p>
+                  <p class="count">7k</p>
+                </div>
+                <div class="filtering-group">
+                  <p class="name">Adidas</p>
+                  <p class="count">1k</p>
+                </div>
+                <div class="filtering-group">
+                  <p class="name">Adidas</p>
+                  <p class="count">2k</p>
+                </div>
+                <div class="filtering-group">
+                  <p class="name">Alexander McQueen</p>
+                  <p class="count">4k</p>
+                </div>
+                <div class="filtering-group">
+                  <p class="name">Balenciaga</p>
+                  <p class="count">1k</p>
+                </div>
+                <div class="filtering-group">
+                  <p class="name">Balmain</p>
+                  <p class="count">1k</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="colors filter-group filter-with-checkbox">
+            <p class="filter-title filter-with-hiding">
+              <span>Colors</span>
+              <img src="./assets/icons/chevron-down.svg" alt="chevron-down"/>
+            </p>
+            <form id="colors-form" class="filter-form">
+              <div class="filtering-group">
+                <div class="container">
+                  <input type="checkbox" name="color-1" id="color-1" checked>
+                  <span class="checkmark">
+                    <img src="./assets/icons/checked.svg" alt="checked">
+                  </span>
+                </div>
+                <p class="name">Color 1</p>
+              </div>
+              <div class="filtering-group">
+                <div class="container">
+                  <input type="checkbox" name="color-2" id="color-2">
+                  <span class="checkmark">
+                    <img src="./assets/icons/checked.svg" alt="checked">
+                  </span>
+                </div>
+                <p class="name">Color 2</p>
+              </div>
+              <div class="filtering-group">
+                <div class="container">
+                  <input type="checkbox" name="color-3" id="color-3">
+                  <span class="checkmark">
+                    <img src="./assets/icons/checked.svg" alt="checked">
+                  </span>
+                </div>
+                <p class="name">Color 3</p>
+              </div>
+              <div class="filtering-group">
+                <div class="container">
+                  <input type="checkbox" name="color-4" id="color-4">
+                  <span class="checkmark">
+                    <img src="./assets/icons/checked.svg" alt="checked">
+                  </span>
+                </div>
+                <p class="name">Color 4</p>
+              </div>
+            </form>
+          </div>
+          <div class="stories filter-group filter-with-checkbox">
+            <p class="filter-title filter-with-hiding">
+              <span>Stories</span>
+              <img src="./assets/icons/chevron-down.svg" alt="chevron-down"/>
+            </p>
+            <form id="stories-form" class="filter-form">
+              <div class="filtering-group">
+                <div class="container">
+                  <input type="checkbox" name="24s-worldwide">
+                  <span class="checkmark">
+                    <img src="./assets/icons/checked.svg" alt="checked">
+                  </span>
+                </div>
+                <p class="name">24S Worldwide</p>
+              </div>
+              <div class="filtering-group">
+                <div class="container">
+                  <input type="checkbox" name="adidas" checked>
+                  <span class="checkmark">
+                    <img src="./assets/icons/checked.svg" alt="checked">
+                  </span>
+                </div>
+                <p class="name">Adidas</p>
+              </div>
+              <div class="filtering-group">
+                <div class="container">
+                  <input type="checkbox" name="bergdorf-goodman">
+                  <span class="checkmark">
+                    <img src="./assets/icons/checked.svg" alt="checked">
+                  </span>
+                </div>
+                <p class="name">Bergdorf Goodman</p>
+              </div>
+              <div class="filtering-group">
+                <div class="container">
+                  <input type="checkbox" name="asos">
+                  <span class="checkmark">
+                    <img src="./assets/icons/checked.svg" alt="checked">
+                  </span>
+                </div>
+                <p class="name">ASOS</p>
+              </div>
+              <div class="filtering-group">
+                <div class="container">
+                  <input type="checkbox" name="bloomingdales">
+                  <span class="checkmark">
+                    <img src="./assets/icons/checked.svg" alt="checked">
+                  </span>
+                </div>
+                <p class="name">Bloomingdales</p>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="categories-products">
+          <div class="categories-title">
+            <h1>Woman’s Dresses</h1>
+            <div class="categories-sorting">
+              <p>Sort by:</p>
+              <div class="sorting-variants">
+                <p class="sorting-value">Newest</p>
+                <img src="./assets/icons/chevron-down.svg">
+              </div>
+            </div>
+          </div>
+          <div class="category-products">
+            <div>
+              <div class="heart-wrapper">
+                <img src="./assets/icons/heart.svg" alt="heart">
+              </div>
+              <img src="./assets/images/category-product-1.png" alt="product-image" class="product-image">
+              <p class="author">Manolo Blahnik</p>
+              <p>Leva 105 Leather</p>
+              <p class="price">$825.00</p>
+            </div>
+            <div>
+              <div class="heart-wrapper">
+                <img src="./assets/icons/heart.svg" alt="heart">
+              </div>
+              <img src="./assets/images/category-product-2.png" alt="product-image" class="product-image">
+              <p class="author">Manolo Blahnik</p>
+              <p>Leva 105 Leather</p>
+              <p class="price">$825.00</p>
+            </div>
+            <div>
+              <div class="heart-wrapper">
+                <img src="./assets/icons/heart.svg" alt="heart">
+              </div>
+              <img src="./assets/images/category-product-3.png" alt="product-image" class="product-image">
+              <p class="author">Manolo Blahnik</p>
+              <p>Leva 105 Leather</p>
+              <p class="price">$825.00</p>
+            </div>
+            <div>
+              <div class="heart-wrapper">
+                <img src="./assets/icons/heart.svg" alt="heart">
+              </div>
+              <img src="./assets/images/category-product-4.png" alt="product-image" class="product-image">
+              <p class="author">Manolo Blahnik</p>
+              <p>Leva 105 Leather</p>
+              <p class="price">$825.00</p>
+            </div>
+            <div>
+              <div class="heart-wrapper">
+                <img src="./assets/icons/heart.svg" alt="heart">
+              </div>
+              <img src="./assets/images/category-product-5.png" alt="product-image" class="product-image">
+              <p class="author">Manolo Blahnik</p>
+              <p>Leva 105 Leather</p>
+              <p class="price">$825.00</p>
+            </div>
+            <div>
+              <div class="heart-wrapper">
+                <img src="./assets/icons/heart.svg" alt="heart">
+              </div>
+              <img src="./assets/images/category-product-6.png" alt="product-image" class="product-image">
+              <p class="author">Manolo Blahnik</p>
+              <p>Leva 105 Leather</p>
+              <p class="price">$825.00</p>
+            </div>
+            <div>
+              <div class="heart-wrapper">
+                <img src="./assets/icons/heart.svg" alt="heart">
+              </div>
+              <img src="./assets/images/category-product-7.png" alt="product-image" class="product-image">
+              <p class="author">Manolo Blahnik</p>
+              <p>Leva 105 Leather</p>
+              <p class="price">$825.00</p>
+            </div>
+            <div>
+              <div class="heart-wrapper">
+                <img src="./assets/icons/heart.svg" alt="heart">
+              </div>
+              <img src="./assets/images/category-product-8.png" alt="product-image" class="product-image">
+              <p class="author">Manolo Blahnik</p>
+              <p>Leva 105 Leather</p>
+              <p class="price">$825.00</p>
+            </div>
+            <div>
+              <div class="heart-wrapper">
+                <img src="./assets/icons/heart.svg" alt="heart">
+              </div>
+              <img src="./assets/images/category-product-9.png" alt="product-image" class="product-image">
+              <p class="author">Manolo Blahnik</p>
+              <p>Leva 105 Leather</p>
+              <p class="price">$825.00</p>
+            </div>
+            <div>
+              <div class="heart-wrapper">
+                <img src="./assets/icons/heart.svg" alt="heart">
+              </div>
+              <img src="./assets/images/category-product-10.png" alt="product-image" class="product-image">
+              <p class="author">Manolo Blahnik</p>
+              <p>Leva 105 Leather</p>
+              <p class="price">$825.00</p>
+            </div>
+            <div>
+              <div class="heart-wrapper">
+                <img src="./assets/icons/heart.svg" alt="heart">
+              </div>
+              <img src="./assets/images/category-product-11.png" alt="product-image" class="product-image">
+              <p class="author">Manolo Blahnik</p>
+              <p>Leva 105 Leather</p>
+              <p class="price">$825.00</p>
+            </div>
+            <div>
+              <div class="heart-wrapper">
+                <img src="./assets/icons/heart.svg" alt="heart">
+              </div>
+              <img src="./assets/images/category-product-12.png" alt="product-image" class="product-image">
+              <p class="author">Manolo Blahnik</p>
+              <p>Leva 105 Leather</p>
+              <p class="price">$825.00</p>
+            </div>
+            <div>
+              <div class="heart-wrapper">
+                <img src="./assets/icons/heart.svg" alt="heart">
+              </div>
+              <img src="./assets/images/category-product-13.png" alt="product-image" class="product-image">
+              <p class="author">Manolo Blahnik</p>
+              <p>Leva 105 Leather</p>
+              <p class="price">$825.00</p>
+            </div>
+            <div>
+              <div class="heart-wrapper">
+                <img src="./assets/icons/heart.svg" alt="heart">
+              </div>
+              <img src="./assets/images/category-product-14.png" alt="product-image" class="product-image">
+              <p class="author">Manolo Blahnik</p>
+              <p>Leva 105 Leather</p>
+              <p class="price">$825.00</p>
+            </div>
+            <div>
+              <div class="heart-wrapper">
+                <img src="./assets/icons/heart.svg" alt="heart">
+              </div>
+              <img src="./assets/images/category-product-15.png" alt="product-image" class="product-image">
+              <p class="author">Manolo Blahnik</p>
+              <p>Leva 105 Leather</p>
+              <p class="price">$825.00</p>
+            </div>
+            <div>
+              <div class="heart-wrapper">
+                <img src="./assets/icons/heart.svg" alt="heart">
+              </div>
+              <img src="./assets/images/category-product-16.png" alt="product-image" class="product-image">
+              <p class="author">Manolo Blahnik</p>
+              <p>Leva 105 Leather</p>
+              <p class="price">$825.00</p>
+            </div>
+          </div>
+          <div class="bottom-button-wrapper">
+            <button class="bottom-button">Load more</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <include src="./footer.html"></include>
+  <script src="scripts/include.js"></script>
+  <script src="scripts/categories-scripts.js"></script>
+</body>
+</html>

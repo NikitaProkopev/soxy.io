@@ -17,6 +17,18 @@ h1 {
     font-weight: 540;
 }
 
+.bottom-button-wrapper .bottom-button {
+    border: none;
+    background: #111;
+    padding: 0.875em /* 14px */ 2.5em;
+    color: white;
+}
+
+.bottom-button-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
 @media (max-width: 1390px) {
     * {
         font-size: 14px;
