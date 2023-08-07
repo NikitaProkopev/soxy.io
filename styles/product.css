@@ -1,0 +1,262 @@
+.categories-name {
+    margin-bottom: 2em;
+}
+
+.product-info {
+    display: grid;
+    grid-template-columns: 1fr 29.375em;
+    gap: 2em;
+    margin-bottom: 2em;
+}
+
+.product-images {
+    display: grid;
+    grid-template-columns: 6.875em 1fr;
+    gap: 1em;
+}
+
+.left-side-images img {
+    width: 100%;
+    margin-bottom: 0.75em;
+}
+
+.left-side-images img.active {
+    border: 1px solid #111111;
+}
+
+.main-image img {
+    width: 100%;
+}
+
+.product-title .product-name {
+    font-size: 2em;
+}
+
+.product-price .price {
+    font-size: 1.75em;
+    font-weight: 500;
+    letter-spacing: -0.6px;
+}
+
+.product-price {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}
+
+.product-price .cashback {
+    background-color: #111111;
+    color: white;
+    font-size: 0.875em;
+    display: flex;
+    align-items: center;
+    padding: 0 0.875em;
+    height: 32px;
+}
+
+.product-title {
+    margin-bottom: 2.5em;
+}
+
+.product-details {
+    background-color: var(--light-gray);
+    padding: 1em;
+    margin-bottom: 1.875em;
+}
+
+.product-details div span {
+    text-decoration: underline;
+}
+
+.current-color span:first-child {
+    color: #8B8B8B;
+}
+
+.current-color {
+    margin-bottom: 1.125em;
+}
+
+.colors-variants .active{
+    border: 1px solid black;
+}
+
+.colors-variants {
+    display: flex;
+    gap: 10px;
+}
+
+.product-colors {
+    margin-bottom: 2.375em;
+}
+
+.product-size .text {
+    font-size: 1em;
+    font-weight: 400;
+    margin-bottom: 1em;
+}
+
+.select-size {
+    background-color: var(--light-gray);
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    padding: 1.0625em 1.25em;
+}
+
+.select-size .current-value {
+    text-align: center;
+    font-size: 1.375em;
+    font-weight: 400;
+    line-height: 138%;
+}
+
+.product-size {
+    margin-bottom: 3.25em;
+}
+
+.product-cashback {
+    font-size: 1.375em;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 115%;
+    margin-bottom: 1.1875em;
+}
+
+.shop-now button, .add-to-cart button {
+    width: 100%;
+    font-size: 18px;
+    padding: 1.375em 0;
+}
+
+.price-alert {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+    margin-top: 2.75em;
+}
+
+.price-alert p, .or {
+    font-size: 1.125em;
+    font-weight: 500;
+}
+
+.or {
+    text-align: center;
+    margin-top: 2.875em;
+}
+
+.add-to-cart {
+    margin-top: 1.5em;
+    margin-bottom: 2.275em;
+
+}
+
+.add-to-cart .description {
+    background-color: var(--light-gray);
+    padding: 1.25em;
+}
+
+.add-to-cart .description .title {
+    font-size: 1.125em;
+    font-weight: 900;
+    margin-bottom: 0.75em;
+}
+
+.add-to-cart .description .text {
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.section-with-hiding p span {
+    font-weight: 900;
+    font-size: 1.125em;
+}
+
+.section-with-hiding p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-description {
+    margin-bottom: 1.875em;
+}
+
+.compare-across .text {
+    font-size: 1.125em;
+    font-weight: 900;
+    line-height: 115%;
+    margin-bottom: 1em;
+}
+
+.compare-across .text span {
+    font-weight: 500;
+    font-size: 1em;
+    line-height: 115%;
+}
+
+.compare-across .price {
+    font-size: 1.125em;
+    font-weight: 500;
+    line-height: 115%;
+    margin-bottom: 1em;
+}
+
+.compare-across {
+    margin-bottom: 2.3125em;
+}
+
+.compare-variants > div {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap:1em;
+}
+
+.compare-variants > div > img {
+    height: 6.25em;
+}
+
+.compare-variants > div > div .name {
+    margin-bottom: .075em;
+    color: #0D99FF;
+    font-size: 1.375em;
+}
+
+.compare-variants > div > div .price {
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+.button.visit-site {
+    padding: 0.875em 2.5em;
+    font-size: 1em;
+}
+
+.compare-variants .separator {
+    width: 100%;
+    height: 1px;
+    background: #DCDCDC;
+    margin: 2em 0;
+}
+
+.compare-variants {
+    margin-bottom: 9.25em;
+}
+
+.also-like .category-products {
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.also-like {
+    margin-bottom: 3.875em;
+}
+
+.load-more .button-wrapper .button {
+    font-weight: 500;
+}
+
+.load-more {
+    margin-bottom: 6.0625em;
+}

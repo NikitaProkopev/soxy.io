@@ -17,16 +17,98 @@ h1 {
     font-weight: 540;
 }
 
-.bottom-button-wrapper .bottom-button {
+.button {
     border: none;
     background: #111;
-    padding: 0.875em /* 14px */ 2.5em;
+    padding: 0.875em 2.5em;
     color: white;
 }
 
-.bottom-button-wrapper {
+.button-wrapper {
     display: flex;
     justify-content: center;
+}
+
+.categories-name p, .categories-name span {
+    font-size: 1em;
+    font-weight: 400;
+    color: #8B8B8B;
+}
+
+.categories-name p.active {
+    color: #111;
+}
+
+.categories-name {
+    display: flex;
+}
+
+.categories-name span {
+    margin: 0 0.3em;
+}
+
+.page-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.page-wrapper > div {
+    width: 78.75em; /* 1260px */
+}
+
+.category-separator .separator {
+    width: 100%;
+    height: 1px;
+    background: #DCDCDC;
+}
+
+.category-separator {
+    display: flex;
+    gap: 1.5em;
+    align-items: center;
+    margin-bottom: 3.75em;
+}
+
+.category-separator .category-text {
+    font-family: 'Zodiak', sans-serif;
+    font-size: 2em;
+    font-style: normal;
+    font-weight: 540;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.category-products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 4.5em 1.5em;
+}
+
+.category-products > div > .product-image {
+    width: 14.437em;
+}
+
+.category-products > div > p.author, .category-products > div > p.price {
+    font-weight: 500;
+}
+
+.category-products > div > p:not(:last-child) {
+    margin-bottom: 0.5em;
+}
+
+.category-products > div > p.author {
+    margin-top: 1em;
+}
+
+.heart-wrapper {
+    width: 14.437em;
+    display: flex;
+    justify-content: right;
+    position: absolute;
+}
+
+.heart-wrapper img {
+    transform: translate(-0.75em, 0.75em);
 }
 
 @media (max-width: 1390px) {
