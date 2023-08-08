@@ -12,11 +12,9 @@
 }
 
 .footer-logo {
-    color: #FFF;
-    font-size: 2.625em; /* 42px */
-    font-weight: 900;
-    line-height: 115%; /* 48.3px */
     margin-bottom: 1.625em; /* 26px */
+    height: 28px;
+    width: 121px;
 }
 
 .subscribe-text {
@@ -64,5 +62,52 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2.4375em; /* 39px */
+}
+
+@media (max-width: 800px) {
+    .footer-wrapper {
+        display: block;
+    }
+
+    .footer {
+        padding: 80px 16px;
+    }
+
+    .footer-logo {
+        margin-bottom: 32px;
+    }
+
+    .subscribe-text {
+        margin-bottom: 12px;
+        font-size: 22px;
+        font-weight: 500;
+    }
+
+    .subscribe-input-wrapper input {
+        padding: 14px 0 13px 0;
+        font-size: 14px;
+        width: 100%;
+    }
+
+    .subscribe-input-wrapper {
+        flex-direction: column;
+        gap: 24px;
+        margin-bottom: 60px;
+    }
+
+    .footer-navigation {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer-navigation-title {
+        font-size: 16px;
+        font-weight: 900;
+    }
+
+    .footer-navigation-item{
+        font-size: 14px;
+        font-weight: 400;
+        margin-top: 24px;
+    }
 }
 

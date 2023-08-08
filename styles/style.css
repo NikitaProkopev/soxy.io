@@ -111,6 +111,10 @@ h1 {
     transform: translate(-0.75em, 0.75em);
 }
 
+.mobile {
+    display: none !important;
+}
+
 @media (max-width: 1390px) {
     * {
         font-size: 14px;
@@ -133,4 +137,30 @@ h1 {
     * {
         font-size: 9px;
     }
+}
+
+@media (max-width: 800px) {
+    .mobile {
+        display: block !important;
+    }
+
+    .desktop {
+        display: none !important;
+    }
+
+    .category-separator .category-text {
+        font-size: 24px;
+    }
+
+    .category-separator {
+        gap: 16px;
+        margin-bottom: 24px;
+        padding-top: 10px;
+        padding-bottom: 18px;
+    }
+
+    .scrolling-content div h1 {
+        font-size: 20px;
+    }
+
 }

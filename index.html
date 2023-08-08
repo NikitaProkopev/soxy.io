@@ -5,13 +5,14 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/fonts.css">
     <link rel="stylesheet" href="styles/main.css">
+    <meta name="viewport" content="width=device-width" />
 </head>
 <body>
     <include src="./header.html"></include>
     <div class="sections-wrapper">
         <div class="sections">
             <section class="first-section">
-                <div class="left-side">
+                <div class="left-side desktop">
                     <div>
                         <img src="./assets/images/first-section-left-side-1.png" alt="image">
                         <p class="title-text">Lifestyle</p>
@@ -23,13 +24,31 @@
                         <h1 class="section-text">10 Boy Smells Candles Your Home (and Senses) Need</h1>
                     </div>
                 </div>
+                <div class="first-part mobile">
+                    <div class="images" id="images">
+                        <div>
+                            <img src="./assets/images/first-section-left-side-2.png" alt="image">
+                            <p class="title-text">Lifestyle</p>
+                            <h1 class="section-text">10 Boy Smells Candles Your Home (and Senses)</h1>
+                        </div>
+                        <div>
+                            <img src="./assets/images/first-section-left-side-1.png" alt="image">
+                            <p class="title-text">Lifestyle</p>
+                            <h1 class="section-text">10 Boy Smells Candles Your Home (and Senses)</h1>
+                        </div>
+                    </div>
+                    <div class="slider-control" id="slider-control">
+                        <div class="active"></div>
+                        <div></div>
+                    </div>
+                </div>
                 <div class="right-side">
                     <div>
                         <div>
                             <p>Lifestyle</p>
                             <h1 class="section-text">
                                 Keep Your Appointments in
-                                Order With a Luxury Planner
+                                Order With a Luxury <span class="desktop">Planner</span>
                             </h1>
                         </div>
                         <img src="./assets/images/first-section-right-side-1.png" alt="image"></div>
@@ -38,7 +57,7 @@
                             <p>Lifestyle</p>
                             <h1 class="section-text">
                                 Keep Your Appointments in
-                                Order With a Luxury Planner
+                                Order With a Luxury <span class="desktop">Planner</span>
                             </h1>
                         </div>
                         <img src="./assets/images/first-section-right-side-2.png" alt="image"></div>
@@ -47,7 +66,7 @@
                             <p>Lifestyle</p>
                             <h1 class="section-text">
                                 Keep Your Appointments in
-                                Order With a Luxury Planner
+                                Order With a Luxury <span class="desktop">Planner</span>
                             </h1>
                         </div>
                         <img src="./assets/images/first-section-right-side-3.png" alt="image"></div>
@@ -56,7 +75,7 @@
                             <p>Lifestyle</p>
                             <h1 class="section-text">
                                 Keep Your Appointments in
-                                Order With a Luxury Planner
+                                Order With a Luxury <span class="desktop">Planner</span>
                             </h1>
                         </div>
                         <img src="./assets/images/first-section-right-side-4.png" alt="image"></div>
@@ -105,25 +124,28 @@
                 <div class="separator"></div>
             </div>
             <section class="third-section">
-                <div><img src="./assets/images/third-section-1.png" alt="image">
-                    <p class="title-text">Manolo Blahnik</p>
-                    <p class="product-name">Leva 105 Leather Sandal</p>
-                    <p class="product-price">$825.00</p>
-                </div>
-                <div><img src="./assets/images/third-section-2.png" alt="image">
-                    <p class="title-text">Manolo Blahnik</p>
-                    <p class="product-name">Leva 105 Leather Sandal</p>
-                    <p class="product-price">$825.00</p>
-                </div>
-                <div><img src="./assets/images/third-section-3.png" alt="image">
-                    <p class="title-text">Manolo Blahnik</p>
-                    <p class="product-name">Leva 105 Leather Sandal</p>
-                    <p class="product-price">$825.00</p>
-                </div>
-                <div><img src="./assets/images/third-section-4.png" alt="image">
-                    <p class="title-text">Manolo Blahnik</p>
-                    <p class="product-name">Leva 105 Leather Sandal</p>
-                    <p class="product-price">$825.00</p>
+                <div class="mobile mobile-scrolling-section-wrapper" id="third-section-wrapper"></div>
+                <div class="mobile-scrolling-content third-section-content" id="third-section-scrolling-content">
+                    <div><img src="./assets/images/third-section-1.png" alt="image">
+                        <p class="title-text">Manolo Blahnik</p>
+                        <p class="product-name">Leva 105 Leather Sandal</p>
+                        <p class="product-price">$825.00</p>
+                    </div>
+                    <div><img src="./assets/images/third-section-2.png" alt="image">
+                        <p class="title-text">Manolo Blahnik</p>
+                        <p class="product-name">Leva 105 Leather Sandal</p>
+                        <p class="product-price">$825.00</p>
+                    </div>
+                    <div><img src="./assets/images/third-section-3.png" alt="image">
+                        <p class="title-text">Manolo Blahnik</p>
+                        <p class="product-name">Leva 105 Leather Sandal</p>
+                        <p class="product-price">$825.00</p>
+                    </div>
+                    <div><img src="./assets/images/third-section-4.png" alt="image">
+                        <p class="title-text">Manolo Blahnik</p>
+                        <p class="product-name">Leva 105 Leather Sandal</p>
+                        <p class="product-price">$825.00</p>
+                    </div>
                 </div>
             </section>
             <div class="category-separator">
@@ -149,7 +171,7 @@
     <section class="fifth-section">
         <div class="scrolling-section-wrapper" id="fifth-section-wrapper"></div>
         <div class="scrolling-content" id="fifth-section-scrolling-content">
-            <div>
+            <div class="desktop">
                 <img src="./assets/images/fifth-section-1.jfif" alt="image">
                 <div>
                     <p class="title-text">Lifestyle</p>
@@ -211,22 +233,36 @@
                 </div>
                 <div class="right-side">
                     <div>
+                        <div class="mobile">
+                            <p class="title-text">Lifestyle</p>
+                            <h1>10 Boy Smells Candles</h1>
+                        </div>
                         <img src="./assets/images/seventh-section-right-side-1.png" alt="image">
-                        <p class="title-text">Lifestyle</p>
-                        <h1>10 Boy Smells Candles</h1>
+                        <p class="title-text desktop">Lifestyle</p>
+                        <h1 class="desktop">10 Boy Smells Candles</h1>
                     </div>
                     <div>
+                        <div class="mobile">
+                            <p class="title-text">Lifestyle</p>
+                            <h1>10 Boy Smells Candles</h1>
+                        </div>
                         <img src="./assets/images/seventh-section-right-side-2.png" alt="image">
-                        <p class="title-text">Lifestyle</p>
-                        <h1>10 Boy Smells Candles</h1>
+                        <p class="title-text desktop">Lifestyle</p>
+                        <h1 class="desktop">10 Boy Smells Candles</h1>
                     </div>
                 </div>
             </section>
-            <div class="category-separator tranding-separator">
+            <div class="category-separator tranding-separator desktop">
                 <p class="category-text tranding-text">Tranding Deals</p>
                 <div class="separator"></div>
             </div>
-            <section class="eighth-section">
+            <div class="mobile">
+                <div class="category-separator">
+                    <p class="category-text">Category</p>
+                    <div class="separator"></div>
+                </div>
+            </div>
+            <section class="eighth-section" id="eight-section">
                 <div>
                     <div class="tranding-item">
                         <h1>Solgaard</h1>
@@ -252,6 +288,7 @@
                         <a href="#" >website.com</a>
                     </div>
                 </div>
+                <div class="separator mobile"></div>
                 <div>
                     <div class="tranding-item">
                         <h1>Solgaard</h1>
@@ -277,6 +314,7 @@
                         <a href="#" >website.com</a>
                     </div>
                 </div>
+                <div class="separator mobile"></div>
                 <div>
                     <div class="tranding-item">
                         <h1>Solgaard</h1>
@@ -303,30 +341,34 @@
                     </div>
                 </div>
             </section>
+            <button class="eighth-section-load-more mobile" id="eighth-section-load-button">Load more</button>
             <div class="category-separator">
                 <p class="category-text">Category</p>
                 <div class="separator"></div>
             </div>
             <section class="ninth-section">
-                <div><img src="./assets/images/ninth-section-1.png" alt="image">
-                    <p class="title-text">Manolo Blahnik</p>
-                    <p class="product-name">Leva 105 Leather Sandal</p>
-                    <p class="product-price">$825.00</p>
-                </div>
-                <div><img src="./assets/images/ninth-section-2.png" alt="image">
-                    <p class="title-text">Manolo Blahnik</p>
-                    <p class="product-name">Leva 105 Leather Sandal</p>
-                    <p class="product-price">$825.00</p>
-                </div>
-                <div><img src="./assets/images/ninth-section-3.png" alt="image">
-                    <p class="title-text">Manolo Blahnik</p>
-                    <p class="product-name">Leva 105 Leather Sandal</p>
-                    <p class="product-price">$825.00</p>
-                </div>
-                <div><img src="./assets/images/ninth-section-4.png" alt="image">
-                    <p class="title-text">Manolo Blahnik</p>
-                    <p class="product-name">Leva 105 Leather Sandal</p>
-                    <p class="product-price">$825.00</p>
+                <div class="mobile mobile-scrolling-section-wrapper" id="ninth-section-wrapper"></div>
+                <div class="mobile-scrolling-content ninth-section-content" id="ninth-section-scrolling-content">
+                    <div><img src="./assets/images/ninth-section-1.png" alt="image">
+                        <p class="title-text">Manolo Blahnik</p>
+                        <p class="product-name">Leva 105 Leather Sandal</p>
+                        <p class="product-price">$825.00</p>
+                    </div>
+                    <div><img src="./assets/images/ninth-section-2.png" alt="image">
+                        <p class="title-text">Manolo Blahnik</p>
+                        <p class="product-name">Leva 105 Leather Sandal</p>
+                        <p class="product-price">$825.00</p>
+                    </div>
+                    <div><img src="./assets/images/ninth-section-3.png" alt="image">
+                        <p class="title-text">Manolo Blahnik</p>
+                        <p class="product-name">Leva 105 Leather Sandal</p>
+                        <p class="product-price">$825.00</p>
+                    </div>
+                    <div><img src="./assets/images/ninth-section-4.png" alt="image">
+                        <p class="title-text">Manolo Blahnik</p>
+                        <p class="product-name">Leva 105 Leather Sandal</p>
+                        <p class="product-price">$825.00</p>
+                    </div>
                 </div>
             </section>
             <div class="category-separator ninth-section-category-separator">
@@ -334,7 +376,7 @@
                 <div class="separator"></div>
             </div>
             <section class="brands-section">
-                <table>
+                <table class="desktop">
                     <colgroup>
                         <col span="1" style="width: 20%;">
                         <col span="1" style="width: 20%;">
@@ -364,6 +406,30 @@
                         <td><div><img src="./assets/images/fear-of-god.png" alt="images"></div></td>
                     </tr>
                 </table>
+                <table class="mobile">
+                    <colgroup>
+                        <col span="1" style="width: 50%;">
+                        <col span="1" style="width: 50%;">
+                    </colgroup>
+                    <tbody>
+                    <tr>
+                        <td><div><img src="./assets/images/Givenchy.png" alt="images"></div></td>
+                        <td><div><img src="./assets/images/dior.png" alt="images"></div></td>
+                    </tr>
+                    <tr>
+                        <td><div><img src="./assets/images/balenciaga.png" alt="images"></div></td>
+                        <td><div><img src="./assets/images/balmain.png" alt="images"></div></td>
+                    </tr>
+                    <tr>
+                        <td><div><img src="./assets/images/dolce&gabbana.png" alt="images"></div></td>
+                        <td><div><img src="./assets/images/amiri-1%201.png" alt="images"></div></td>
+                    </tr>
+                    <tr>
+                        <td><div><img src="./assets/images/gucci.png" alt="images"></div></td>
+                        <td><div><img src="./assets/images/hermes.png" alt="images"></div></td>
+                    </tr>
+                    </tbody>
+                </table>
                 <div class="all-brands-wrapper button-wrapper">
                     <button class="all-brands button">View all brands</button>
                 </div>
@@ -373,5 +439,6 @@
     <include src="./footer.html"></include>
     <script src="scripts/category-scrolling.js"></script>
     <script src="scripts/include.js"></script>
+    <script src="scripts/main.js"></script>
 </body>
 </html>
