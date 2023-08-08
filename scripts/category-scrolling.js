@@ -72,7 +72,7 @@ for(let i = 0; i < scrollingWrapper.length; i++) {
                         return;
 
                     }
-                },20)
+                },12)
             }
             startScrollingX = undefined;
             document.body.onmouseup = document.body.ontouchend = undefined;
