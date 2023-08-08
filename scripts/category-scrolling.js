@@ -28,7 +28,18 @@ if (scrollingTag) {
 
 for(let i = 0; i < scrollingWrapper.length; i++) {
 
+    let intervalsCount = 0;
+
+    let animationInterval;
+
     scrollingWrapper[i].ontouchstart = scrollingWrapper[i].onmousedown = function (event) {
+
+        if (animationInterval) {
+            clearInterval(animationInterval);
+            intervalsCount = 0;
+            animationInterval = undefined;
+        }
+
         startScrollingX = event.x ? event.x : event.touches[0].pageX;
         startScrollPosition = scrollingTag[i].scrollLeft;
 
@@ -44,9 +55,9 @@ for(let i = 0; i < scrollingWrapper.length; i++) {
 
                 let scrollingPosition = scrollingTag[i].scrollLeft;
                 let isLeftScrolling = startScrollPosition - scrollingPosition > 0;
-                let intervalsCount = 0;
+                intervalsCount = 0;
 
-                let animationInterval = setInterval(() => {
+                animationInterval = setInterval(() => {
                     if (intervalsCount < 20) {
 
                         let scrollTo = scrollingPosition += isLeftScrolling ? -10 + intervalsCount / 2 : 10 - intervalsCount / 2
@@ -56,6 +67,8 @@ for(let i = 0; i < scrollingWrapper.length; i++) {
                     } else {
 
                         clearInterval(animationInterval);
+                        animationInterval = undefined;
+                        intervalsCount = 0;
                         return;
 
                     }
