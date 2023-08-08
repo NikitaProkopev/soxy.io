@@ -40,6 +40,27 @@ for(let i = 0; i < scrollingWrapper.length; i++) {
 
         document.body.ontouchend = document.body.onmouseup = function () {
             document.body.onmousemove = document.body.ontouchmove = undefined;
+            if (window.innerWidth < 800) {
+
+                let scrollingPosition = scrollingTag[i].scrollLeft;
+                let isLeftScrolling = startScrollPosition - scrollingPosition > 0;
+                let intervalsCount = 0;
+
+                let animationInterval = setInterval(() => {
+                    if (intervalsCount < 20) {
+
+                        let scrollTo = scrollingPosition += isLeftScrolling ? -10 + intervalsCount / 2 : 10 - intervalsCount / 2
+                        scrollingTag[i].scrollTo(scrollTo, 0);
+                        intervalsCount++;
+
+                    } else {
+
+                        clearInterval(animationInterval);
+                        return;
+
+                    }
+                },20)
+            }
             startScrollingX = undefined;
             document.body.onmouseup = document.body.ontouchend = undefined;
             document.body.style.userSelect = 'auto';

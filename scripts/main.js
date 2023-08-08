@@ -1,7 +1,17 @@
+const sliderController = document.getElementById('slider-control');
+let images = document.getElementById('images');
+
 (function sliderWithController() {
-    const sliderController = document.getElementById('slider-control');
+    [...images.children].forEach((item, index) => {
+        const controller = document.createElement('div');
+        if (index === 0) {
+            controller.className = 'active';
+        }
+        sliderController.appendChild(controller);
+    })
+
     const controllerChildren = [...sliderController.children];
-    const images = document.getElementById('images');
+
 
     if (sliderController) {
 
@@ -11,11 +21,65 @@
                 controllerChildren.forEach(item => item.className = undefined);
                 event.target.className = 'active';
 
-                const activeIndex = controllerChildren.findIndex((item) => item.className === 'active')
-                images.style.transform = `translateX(calc( (100vw - 32px) * ${-activeIndex} + 16px * ${-activeIndex}))`
+                const activeIndex = controllerChildren.findIndex((item) => item.className === 'active');
+                let translateXValue = (window.innerWidth - 32) * -activeIndex + 16 * -activeIndex;
+                images.style.transform = `translate3d(${translateXValue}px, 0, -1px)`
             }
         })
 
+    }
+})();
+
+(function sliderWithControllScrolling() {
+    if (window.innerWidth < 800) {
+        const firstSectionWrapper = document.getElementById('first-section-wrapper');
+        firstSectionWrapper.ontouchstart = function (event) {
+            images.style.transition = 'none';
+            startScrollingX = event.touches[0].pageX;
+
+            const values = images.style.transform.split(/\w+\(|\);?/);
+            const transform = values[1].split(/,\s?/g).map(parseInt);
+            startScrollPosition = transform[0];
+
+
+            document.body.style.userSelect = 'none';
+            document.body.ontouchmove = function (event) {
+                let currentX = event.touches[0].pageX;
+                images = document.getElementById('images');
+                const currentTransformX = startScrollPosition + (currentX - startScrollingX);
+                images.style.transform = `translate3d(${currentTransformX}px, 0, -1px)`;
+            }
+
+            document.body.ontouchend = document.body.onmouseup = function () {
+                document.body.ontouchmove = undefined;
+                document.body.ontouchend = undefined;
+                document.body.style.userSelect = 'auto';
+                images.style.transition = 'transform 0.5s';
+
+                const values = images.style.transform.split(/\w+\(|\);?/);
+                const transform = values[1].split(/,\s?/g).map(parseInt);
+                endScrollPosition = transform[0];
+                const scrollingPercentage = (startScrollPosition - endScrollPosition) / images.children[0].offsetWidth;
+                const currentItem = -(startScrollPosition / (window.innerWidth - 16));
+                if (Math.abs(scrollingPercentage) > 0.3) {
+                    const isRightScrolling = scrollingPercentage < 0;
+                    let nextItem = isRightScrolling ? currentItem - 1 :currentItem + 1;
+
+                    nextItem = nextItem < 0 ? 0 : nextItem;
+                    nextItem = nextItem >= images.children.length ? images.children.length - 1 : nextItem;
+
+                    const translationX = (window.innerWidth - 32) * -nextItem + 16 * -nextItem;
+                    images.style.transform = `translate3d(${translationX}px, 0, -1px)`;
+                    [...sliderController.children].forEach(item => item.className = undefined);
+                    sliderController.children[nextItem].className = 'active';
+                } else {
+                    const translationX = (window.innerWidth - 32) * -currentItem + 16 * -currentItem;
+                    images.style.transform = `translate3d(${translationX}px, 0, -1px)`;
+                }
+                // (window.innerWidth - 32) * -activeIndex + 16 * -activeIndex
+                startScrollingX = undefined;
+            }
+        }
     }
 })();
 

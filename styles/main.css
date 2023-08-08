@@ -287,7 +287,7 @@ section img {
     margin-bottom: 4.9375em; /* 79px */
 }
 
-.first-part.mobile > .images {
+.first-part.mobile > div > .images {
     display: flex;
     gap: 16px;
     transition: transform 0.5s;
@@ -555,6 +555,14 @@ section img {
 
     .first-section .right-side {
         gap: 32px;
+    }
+
+    #first-section-wrapper {
+        height: 521px;
+        position: absolute;
+        width: calc(100vw - 32px);
+        transform: translateZ(10px);
+        z-index: 1000;
     }
 }
 
