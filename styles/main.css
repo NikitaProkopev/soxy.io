@@ -552,6 +552,10 @@ section img {
     .all-brands-wrapper {
         margin-bottom: 120px;
     }
+
+    .first-section .right-side {
+        gap: 32px;
+    }
 }
 
 
