@@ -20,9 +20,9 @@
         <p class="active">Shoes</p>
       </div>
       <div class="categories-content">
-        <div class="categories-filter">
-          <div class="count-of-products">915 items</div>
-          <div class="applied-filters filter-group">
+        <div class="categories-filter" id="categories-filter">
+          <div class="count-of-products desktop">915 items</div>
+          <div class="applied-filters filter-group desktop">
             <p class="filter-title">Applied filters</p>
             <div class="applied-filters-content" id="applied-filters-content">
               <div class="woman">
@@ -34,6 +34,12 @@
               <div class="color-1">
                 <p>Color 1</p>
                 <img src="./assets/icons/cross.svg" alt="cross"></div>
+            </div>
+          </div>
+          <div class="mobile">
+            <div class="filter-title">
+              <p>Filter</p>
+              <img id="close-filters" src="./assets/icons/cross.svg">
             </div>
           </div>
           <div class="accessories filter-group filter-with-count">
@@ -204,12 +210,28 @@
             </form>
           </div>
         </div>
-        <div class="categories-products">
+        <div class="categories-products" id="categories-products">
           <h1 class="mobile">Woman’s Dresses</h1>
-          <div class="items-count mobile">915 items</div>
+          <div class="categories-title">
+            <h1 class="desktop">Woman’s Dresses</h1>
+            <div class="mobile">
+              <div class="mobile-filter" id="mobile-filter">
+                <img src="./assets/icons/filter.svg" alt="filter">
+                <p>Filter (<span id="filters-count">3</span>)</p>
+              </div>
+            </div>
+            <div class="categories-sorting">
+              <p>Sort by:</p>
+              <div class="sorting-variants">
+                <p class="sorting-value">Newest</p>
+                <img src="./assets/icons/chevron-down.svg">
+              </div>
+            </div>
+          </div>
+          <div class="items-count mobile">915 <span>items</span></div>
           <div class="mobile">
             <div class="applied-filters filter-group">
-              <div class="applied-filters-content selected-filters">
+              <div class="applied-filters-content selected-filters" id="mobile-applied-filters-content">
                 <div class="woman">
                   <p>Woman</p>
                   <img src="./assets/icons/cross.svg" alt="cross"></div>
@@ -219,22 +241,6 @@
                 <div class="color-1">
                   <p>Color 1</p>
                   <img src="./assets/icons/cross.svg" alt="cross"></div>
-              </div>
-            </div>
-          </div>
-          <div class="categories-title">
-            <h1 class="desktop">Woman’s Dresses</h1>
-            <div class="mobile">
-              <div class="mobile-filter">
-                <img src="./assets/icons/filter.png" alt="filter">
-                <p>Filter (<span id="filters-count">3</span>)</p>
-              </div>
-            </div>
-            <div class="categories-sorting">
-              <p>Sort by:</p>
-              <div class="sorting-variants">
-                <p class="sorting-value">Newest</p>
-                <img src="./assets/icons/chevron-down.svg">
               </div>
             </div>
           </div>

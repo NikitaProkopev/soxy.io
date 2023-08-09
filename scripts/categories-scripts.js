@@ -10,7 +10,9 @@ const inputValueAppliedNameArray = [
     { inputValue: 'bloomingdales', appliedName: 'Bloomingdales' },
 ];
 const filterForms = document.getElementsByClassName('filter-form');
-const appliedFiltersContent = document.getElementById('applied-filters-content');
+const appliedFiltersContent =
+    window.innerWidth > 800 ? document.getElementById('applied-filters-content')
+        : document.getElementById('mobile-applied-filters-content');
 
 
 (function hideFilters() {
@@ -24,12 +26,13 @@ const appliedFiltersContent = document.getElementById('applied-filters-content')
     }
     for (let i = 0; i < filterTitles.length; i++) {
         filterTitles[i].onclick = function (event) {
+            let target = event.target;
+            target = event.target.tagName !== 'P' ? event.target.parentElement : target;
 
-            let parentElement = event.target.parentElement;
+            let parentElement = target.parentElement;
             let filterGroupContent = parentElement.children[parentElement.children.length - 1];
-
             filterGroupContent.className = addOrDeleteHidden(filterGroupContent.className);
-            event.target.className = addOrDeleteHidden(event.target.className);
+            target.className = addOrDeleteHidden(target.className);
             parentElement.className = addOrDeleteHidden(parentElement.className);
 
         };
@@ -64,6 +67,8 @@ const appliedFiltersContent = document.getElementById('applied-filters-content')
                     addEventToAppliedFilters(newAppliedFilter.children[1]);
                     appliedFiltersContent.appendChild(newAppliedFilter);
 
+                    changeSelectedFiltersCount();
+
                 } else {
 
                     const appliedFilterTag = [ ...appliedFiltersContent.children ].find(
@@ -73,6 +78,8 @@ const appliedFiltersContent = document.getElementById('applied-filters-content')
                     if (appliedFilterTag) {
                         appliedFilterTag.remove();
                     }
+
+                    changeSelectedFiltersCount();
 
                 }
 
@@ -96,13 +103,43 @@ function addEventToAppliedFilters(appliedFilter) {
                 if (input.name === parentElement.className) {
                     input.checked = false;
                     parentElement.remove();
+                    changeSelectedFiltersCount();
                 }
                 if (i === filterForms.length - 1 && j === filterForms[i].length - 1
                     && input.name !== parentElement.className) {
                         parentElement.remove();
+                    changeSelectedFiltersCount();
                 }
             }
         }
 
     }
 }
+
+function changeSelectedFiltersCount() {
+    if (window.innerWidth < 800) {
+        document.getElementById('filters-count').innerText =
+            appliedFiltersContent.children.length.toString();
+    }
+}
+
+(function mobileFilters(){
+    const mobileFiltersBlock = document.getElementById('mobile-filter');
+    const filtersBlock = document.getElementById('categories-filter');
+    const categoriesProduct = document.getElementById('categories-products');
+
+
+    mobileFiltersBlock.onclick = function () {
+        const footer = document.getElementById('footer');
+        if (filtersBlock.classList.contains('closed')) {
+            filtersBlock.classList.replace('closed', 'opened');
+        } else {
+            filtersBlock.classList.add('opened');
+        }
+    }
+
+    document.getElementById('close-filters').onclick = function () {
+        const footer = document.getElementById('footer');
+        filtersBlock.classList.replace('opened', 'closed');
+    }
+})();

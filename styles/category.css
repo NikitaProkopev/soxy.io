@@ -233,10 +233,13 @@ header.header {
         position: fixed;
         background-color: white;
         width: calc(100% - 32px);
-        left: -100%;
         top: 0;
+        left: -100vw;
         z-index: 10000;
-        padding: 0 16px;
+        padding: 24px 16px;
+        height: calc(100vh - 48px);
+        overflow-y: scroll;
+        transition: max-width 0.5ms;
     }
 
     .category-products {
@@ -295,5 +298,149 @@ header.header {
     .categories-products h1 {
         font-size: 24px;
         padding: 24px 0;
+    }
+
+    .mobile .applied-filters .applied-filters-content > div p {
+        font-size: 14px;
+    }
+
+    .mobile .applied-filters .applied-filters-content > div {
+        padding: 12px;
+    }
+
+    .applied-filters-content > div > img {
+        height: 12px;
+        width: 12px;
+    }
+
+    .mobile .applied-filters {
+        margin-bottom: 24px;
+    }
+
+    .items-count.mobile {
+        margin-bottom: 12px;
+    }
+
+    .mobile.items-count, .mobile.items-count span {
+        font-size: 14px;
+    }
+
+    .mobile.items-count span {
+        color: #8B8B8B;
+    }
+
+    .categories-title {
+        margin-bottom: 24px;
+    }
+
+    .mobile .filter-title p {
+        font-size: 24px;
+        font-weight: 900;
+        line-height: 115%;
+    }
+
+    .mobile .filter-title {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        margin-bottom: 32px;
+    }
+
+    .mobile .filter-title img {
+        height: 20px;
+        width: 20px;
+        margin-right: 2px;
+    }
+
+    .filter-title span {
+        font-size: 20px;
+        line-height: 115%;
+    }
+
+    .filter-title {
+        margin-bottom: 24px;
+    }
+
+    .filtering-group {
+        justify-content: initial;
+        gap: 6px;
+    }
+
+    .filtering-group p {
+        font-size: 16px;
+    }
+
+    .filter-group {
+        margin-bottom: 40px;
+    }
+
+    .filter-group > div > div:not(:last-child),
+    .filter-group > form > div:not(:last-child),
+    .filter-group-content > div:not(:last-child) {
+        margin-bottom: 16px;
+    }
+
+    .checkmark {
+        height: 20px;
+        width: 20px;
+    }
+
+    .checkmark img {
+        height: 14px;
+        width: 14px;
+        margin-left: 2px;
+    }
+
+    .stories.filter-group {
+        margin-bottom: 0;
+    }
+
+    .filter-form .filtering-group {
+        gap: 12px;
+    }
+
+    .brands-search input {
+        font-size: 14px;
+        font-weight: 400;
+        padding-left: 12px;
+    }
+
+    .brands-search {
+        gap: 0;
+        padding: 10px 16px;
+    }
+
+    .categories-filter.opened {
+        animation-name: open-filters;
+        animation-fill-mode: forwards;
+        animation-duration: 0.4s;
+    }
+
+    .categories-filter.closed {
+        animation-name: hide-filters;
+        animation-fill-mode: forwards;
+        animation-duration: 0.4s;
+    }
+
+    .filter-form.hidden input {
+        display: none;
+    }
+
+    @keyframes open-filters {
+        from {
+            left: -100vw;
+        }
+        to {
+            left: 0;
+        }
+    }
+
+    @keyframes hide-filters {
+        from {
+            left: 0;
+        }
+        to {
+            left: -100vw;
+        }
     }
 }

@@ -115,6 +115,10 @@ h1 {
     display: none !important;
 }
 
+html {
+    -webkit-tap-highlight-color: transparent;
+}
+
 @media (max-width: 1390px) {
     * {
         font-size: 14px;
