@@ -418,7 +418,7 @@ button.visit-site .desktop {
 
     .colors-variants {
         gap: 10px;
-        width: 100vw;
+        width: calc(100vw - 32px);
         overflow-x: scroll;
         transform: translateX(-16px);
         padding: 0 16px;
