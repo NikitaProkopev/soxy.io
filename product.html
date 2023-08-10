@@ -12,7 +12,7 @@
   <include src="./header.html"></include>
   <div class="page-wrapper">
     <div>
-      <div class="categories-name">
+      <div class="categories-name desktop">
         <p>All</p>
         <span>/</span>
         <p>Woman</p>
@@ -25,16 +25,19 @@
       </div>
       <div class="product-info">
         <div class="product-images">
-          <div class="left-side-images" id="left-side-images">
-            <img src="./assets/images/product-image-1.png" alt="product-image-1" class="active">
-            <img src="./assets/images/product-image-2.png" alt="product-image-2">
-            <img src="./assets/images/product-image-3.png" alt="product-image-3">
-            <img src="./assets/images/product-image-4.png" alt="product-image-4">
-            <img src="./assets/images/product-image-5.png" alt="product-image-5">
-          </div>
-          <div class="main-image">
-            <img src="./assets/images/product-image-1.png" alt="product-image-1" id="main-image">
-          </div>
+          <div id="first-section-wrapper" class="mobile"></div>
+            <div class="left-side-images" id="left-side-images" style="transform: translate3d(0px, 0px, -1px)">
+              <img src="./assets/images/product-image-1.png" alt="product-image-1" class="active">
+              <img src="./assets/images/product-image-2.png" alt="product-image-2">
+              <img src="./assets/images/product-image-3.png" alt="product-image-3">
+              <img src="./assets/images/product-image-4.png" alt="product-image-4">
+              <img src="./assets/images/product-image-5.png" alt="product-image-5">
+            </div>
+            <div class="product-images-controller" id="product-images-controller">
+            </div>
+            <div class="main-image desktop">
+              <img src="./assets/images/product-image-1.png" alt="product-image-1" id="main-image">
+            </div>
         </div>
         <div>
           <div class="product-title">
@@ -120,7 +123,9 @@
             <p class="name">(WMNS) Nike Dunk Low 'Black White' DD1503-101</p>
             <p class="price">$399.00 USD</p>
           </div>
-          <button class="button">VISIT SITE</button>
+          <button class="button visit-site">
+            Visit site
+          </button>
         </div>
         <div class="separator"></div>
         <div>
@@ -129,7 +134,7 @@
             <p class="name">(WMNS) Nike Dunk Low 'Black White' DD1503-101</p>
             <p class="price">$399.00 USD</p>
           </div>
-          <button class="button visit-site">VISIT SITE</button>
+          <button class="button visit-site">Visit site</button>
         </div>
       </div>
       <div class="category-separator">
@@ -174,7 +179,7 @@
             <p>Leva 105 Leather</p>
             <p class="price">$825.00</p>
           </div>
-          <div>
+          <div class="desktop">
             <div class="heart-wrapper">
               <img src="./assets/icons/heart.svg" alt="heart">
             </div>
@@ -194,5 +199,6 @@
   <script src="scripts/include.js"></script>
   <script src="scripts/heart-wrappers.js"></script>
   <script src="scripts/product-script.js"></script>
+  <script src="scripts/main.js"></script>
 </body>
 </html>

@@ -82,7 +82,7 @@
 
 .colors-variants {
     display: flex;
-    gap: 10px;
+    gap: 0.625em;
 }
 
 .product-colors {
@@ -124,7 +124,7 @@
 
 .shop-now button, .add-to-cart button {
     width: 100%;
-    font-size: 18px;
+    font-size: 1.125em;
     padding: 1.375em 0;
 }
 
@@ -259,4 +259,325 @@
 
 .load-more {
     margin-bottom: 6.0625em;
+}
+
+.main-image {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.colors-variants img {
+    height: 4.375em;
+    width: 4.375em;
+}
+
+button.visit-site .desktop {
+    color: white;
+}
+
+@media (max-width: 800px) {
+
+    .main-image {
+        grid-column: initial;
+        grid-row: initial;
+    }
+
+    .product-info {
+        display: block;
+        margin-bottom: 80px;
+        margin-top: 4px;
+    }
+
+    .page-wrapper {
+        overflow-x: hidden;
+        width: calc(100vw - 32px);
+        padding: 0 16px
+    }
+
+    .page-wrapper > div {
+        width: calc(100vw - 32px);
+    }
+
+    .product-images {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 0;
+        transform: translateX(-16px);
+        width: 100vw;
+        overflow-x: hidden;
+    }
+
+    .product-images .left-side-images {
+        display: flex;
+        transition: transform 0.5s;
+    }
+
+    .product-images .left-side-images img {
+        height: initial;
+        width: 100vw;
+        margin-bottom: 0;
+    }
+
+    .also-like .category-products {
+        width: calc(100vw - 32px);
+        overflow-x: hidden;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 40px 16px;
+    }
+
+    .also-like .category-products > div,
+    .also-like .category-products > div > img{
+        width: 100%;
+    }
+
+    .heart-wrapper {
+        width: calc(50vw - 24px);
+    }
+
+    .left-side-images > img.active {
+        border: none;
+    }
+
+    #first-section-wrapper {
+        height: calc(100vw * 1.1841);
+        position: absolute;
+        width: 100vw;
+        transform: translateZ(10px);
+        z-index: 1000;
+    }
+
+    .product-images-controller {
+        display: flex;
+        width: calc(100vw - 32px);
+        padding: 0 16px;
+        margin: 12px 0 32px 0;
+    }
+
+    .product-images-controller div {
+        background: #E9E9E9;
+        height: 1px;
+        width: 100%;
+    }
+
+    .product-images-controller div.active {
+        background-color: #111111;
+    }
+
+    .product-author {
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+
+    .product-title .product-name{
+        font-size: 24px;
+    }
+
+    .product-price .price {
+        font-size: 24px;
+        letter-spacing: -0.48px;
+    }
+
+    .product-price {
+        gap: 16px;
+    }
+
+    .product-price .cashback {
+        font-size: 14px;
+        padding: 7px 14px 8px 11px;
+        line-height: normal;
+        height: initial;
+    }
+
+    .product-title {
+        margin-bottom: 32px;
+    }
+
+    .product-details div, .product-details div span {
+        font-size: 14px;
+        line-height: 140%;
+    }
+
+    .product-details {
+        padding: 16px;
+        margin-bottom: 32px;
+    }
+
+    .current-color > span {
+        font-size: 14px;
+        line-height: normal;
+    }
+
+    .current-color {
+        margin-bottom: 16px;
+    }
+
+    .colors-variants img {
+        height: 70px;
+        width: 70px;
+    }
+
+    .colors-variants {
+        gap: 10px;
+        width: 100vw;
+        overflow-x: scroll;
+        transform: translateX(-16px);
+        padding: 0 16px;
+    }
+
+    .colors-variants::-webkit-scrollbar {
+        display: none;
+    }
+
+    .product-colors, .compare-across {
+        margin-bottom: 32px;
+    }
+
+    .product-size .text {
+        font-size: 14px;
+        line-height: 138%;
+        margin-bottom: 12px;
+    }
+
+    .select-size {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 138%;
+        padding: 16px;
+    }
+
+    .select-size img {
+        height: 24px;
+        width: 24px;
+    }
+
+    .product-size {
+        margin-bottom: 40px;
+    }
+
+    .product-cashback {
+        font-size: 18px;
+        margin-bottom: 12px;
+    }
+
+    .shop-now button, .add-to-cart button {
+        padding: 19px 0;
+        font-size: 16px;
+    }
+
+    .price-alert {
+        background-color: var(--light-gray);
+        padding: 15px 0;
+    }
+
+    .price-alert p {
+        font-size: 16px;
+        font-weight: 500;
+        gap: 8px;
+    }
+
+    .or {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: normal;
+        margin-bottom: 24px;
+    }
+
+    .add-to-cart .description .title {
+        font-size: 18px;
+        line-height: 115%;
+    }
+
+    .add-to-cart .description .text {
+        font-size: 14px;
+        line-height: 140%;
+    }
+
+    .add-to-cart .description {
+        padding: 24px 16px;
+    }
+
+    .section-with-hiding p span,
+    .compare-across .text,
+    .compare-across .text span,
+    .compare-across .price{
+        font-size: 16px;
+    }
+
+    .product-description {
+        margin-bottom: 16px;
+    }
+
+    .compare-across .text {
+        margin-bottom: 16px;
+    }
+
+    .compare-variants > div {
+        grid-template-columns: auto 1fr;
+        gap: 16px 24px;
+    }
+
+    .compare-variants > div > button {
+        grid-column: 1 / 3;
+        color: #111;
+        background-color: white;
+        border: 1px solid #111;
+    }
+
+    .button.visit-site {
+        font-size: 14px;
+        padding: 14px 0;
+    }
+
+    .compare-variants > div > img {
+        width: 80px;
+        height: 100px;
+    }
+
+    .compare-variants > div > div .name,
+    .compare-variants > div > div .price {
+        font-size: 16px;
+    }
+
+    .compare-variants > div > div > .name {
+        line-height: 140%;
+        margin-bottom: 8px;
+    }
+
+    .compare-variants .separator {
+        margin: 24px 0;
+    }
+
+    .heart-wrapper img {
+        transform: translate(-12px, 12px);
+    }
+
+    .compare-variants {
+        margin-bottom: 72px;
+    }
+
+    .category-products > div > p {
+        font-size: 14px;
+    }
+
+    .category-products > div > p.author {
+        margin-top: 16px;
+    }
+
+    .category-products > div > p:not(:last-child) {
+        margin-bottom: 8px;
+    }
+
+    .also-like {
+        margin-bottom: 40px;
+    }
+
+    .load-more button {
+        width: 100%;
+        padding: 14px 0;
+        font-size: 14px;
+    }
+
+    .load-more {
+        margin-bottom: 120px;
+    }
 }
