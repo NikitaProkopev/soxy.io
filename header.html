@@ -21,7 +21,20 @@
                     </div>
                 </nav>
                 <div class="navigation-bag">
-                    <img src="assets/icons/bag.svg"/>
+                    <img id="navigation-bag" src="assets/icons/bag.svg"/>
+                    <div id="count-items-in-cart">
+                        <span></span>
+                    </div>
+                    <div class="cart-container closed" id="cart-container">
+                        <p class="cart-header">YOUR CART <span id="cart-items-count"></span></p>
+                        <div id="cart-items"></div>
+                        <div class="cart-total">
+                            <p>TOTAL</p>
+                            <p id="cart-total-price"></p>
+                        </div>
+                        <a href="/cart.html" class="button">Proceed to checkout</a>
+                    </div>
+                    <div id="cart-background"></div>
                 </div>
             </div>
         </div>

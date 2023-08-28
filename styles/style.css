@@ -3,7 +3,7 @@
     padding: 0;
     margin: 0;
     font-family: 'Moderat', sans-serif;
-    font-size: 16px;
+    font-size: 1vw;
 }
 
 :root {
@@ -117,30 +117,6 @@ h1 {
 
 html {
     -webkit-tap-highlight-color: transparent;
-}
-
-@media (max-width: 1390px) {
-    * {
-        font-size: 14px;
-    }
-}
-
-@media (max-width: 1200px) {
-    * {
-        font-size: 12px;
-    }
-}
-
-@media (max-width: 1000px) {
-    * {
-        font-size: 10px;
-    }
-}
-
-@media (max-width: 850px) {
-    * {
-        font-size: 9px;
-    }
 }
 
 @media (max-width: 800px) {
