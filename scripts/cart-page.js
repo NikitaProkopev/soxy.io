@@ -8,29 +8,57 @@ const totalTag = document.getElementById('total');
 function getItemsAndGenerateHTML() {
 
     let cartItems = JSON.parse(localStorage.getItem('cartItems'));
+    const isDesktop = document.body.offsetWidth > 800;
+
 
     if (cartItems && cartItems.length) {
         cartItems = cartItems.map(item => JSON.parse(item));
         emptyCartTag.style.display = 'none';
         cartWithItemsTag.style.display = 'block';
-        cartTitle.style.marginBottom = '2.5em';
+        cartTitle.style.marginBottom = document.body.offsetWidth < 800 ? '40px' : '2.5em';
         cartItemsContainerTag.innerHTML = '';
         let generatedHTML = '';
-        for(let i = 0; i < cartItems.length; i++) {
-            generatedHTML += '<tr>' +
-                `<td><img src="${cartItems[i].imgSrc}"/></td>`+
-                '<td>' +
+        if (isDesktop) {
+            for (let i = 0; i < cartItems.length; i++) {
+                generatedHTML += '<tr>' +
+                    `<td><img src="${cartItems[i].imgSrc}"/></td>` +
+                    '<td>' +
                     generateNameAndControlsHtml(cartItems[i].name, cartItems[i].manufacture, i) +
-                '</td>' +
-                `<td><p class="value">${cartItems[i].color}</p></td>` +
-                `<td><p class="value">${cartItems[i].size}</p></td>` +
-                '<td><p class="value count">' +
+                    '</td>' +
+                    `<td><p class="value">${cartItems[i].color}</p></td>` +
+                    `<td><p class="value">${cartItems[i].size}</p></td>` +
+                    '<td><p class="value count">' +
                     `<input class="count-input" maxlength="4"
                         style="width: ${0.6 * cartItems[i].count.toString().length}em" 
                         name="count-${i}" value="${cartItems[i].count}"/>` +
-                '</p></td>' +
-                `<td><p class="value price">\$ ${cartItems[i].price * cartItems[i].count}</p></td>` +
-                '</tr>'
+                    '</p></td>' +
+                    `<td><p class="value price">\$ ${cartItems[i].price * cartItems[i].count}</p></td>` +
+                    '</tr>'
+            }
+        } else {
+            for (let i = 0; i < cartItems.length; i++) {
+                const countLenght = cartItems[i].count.toString().length;
+                generatedHTML +=
+                    '<tr>' +
+                        '<td>' +
+                            '<div>' +
+                                `<img src="${cartItems[i].imgSrc}"/>` +
+                                '<div class="content">' +
+                                    generateNameAndControlsHtml(cartItems[i].name, cartItems[i].manufacture, i, true) +
+                                    `<p class="value price">\$ ${cartItems[i].price * cartItems[i].count}</p>` +
+                                    `<p class="value space-between"><span>Size: </span><span>${cartItems[i].size}</span></p>` +
+                                    '<p class="value count space-between">' +
+                                    '<span>Quantity</span>' +
+                                    `<input class="count-input" maxlength="4"
+                                        style="width: ${countLenght === 1 ? 10 : 9 * countLenght}px" 
+                                        name="count-${i}" value="${cartItems[i].count}"/>` +
+                                    '</p>' +
+                                '</div>' +
+                                generateNameAndControlsHtml('', '', i, false, true);
+                            '</div>' +
+                        '</td>' +
+                    '</tr>'
+            }
         }
         cartItemsContainerTag.innerHTML = generatedHTML;
 
@@ -44,30 +72,43 @@ function getItemsAndGenerateHTML() {
     } else {
         emptyCartTag.style.display = 'flex';
         cartWithItemsTag.style.display = 'none';
-        cartTitle.style.marginBottom = '3.125em';
+        cartTitle.style.marginBottom = isDesktop ? '80px' : '3.125em';
     }
 
 }
 
-function generateNameAndControlsHtml(name, manufacture, index) {
-    return '<div>' +
+function generateNameAndControlsHtml(name, manufacture, index, isOnlyNameAndManufacture = false, isOnlyControl = false) {
+    let generatedHtml = '';
+    if (isOnlyNameAndManufacture || (!isOnlyControl && !isOnlyNameAndManufacture)) {
+        generatedHtml += '<div>' +
             '<div class="second-column">' +
                 '<div class="name-and-manufacture">' +
-                `<p class="name">${name}</p>` +
-                `<p class="manufacture">${manufacture}</p>` +
-                '</div>' +
-            '<div class="cart-item-control">'+
+                    `<p class="name">${name}</p>` +
+                    `<p class="manufacture">${manufacture}</p>` +
+                '</div>';
+    }
+    if(isOnlyNameAndManufacture) {
+        generatedHtml += '</div></div>';
+    }
+
+    if (isOnlyControl || (!isOnlyControl && !isOnlyNameAndManufacture)) {
+        generatedHtml +='<div class="cart-item-control">' +
                 `<div class="move-to-whitelist">` +
                     '<img src="assets/icons/heart.svg"/>' +
                     '<p>Move to  Whishlist</p>' +
                 '</div>' +
-                    `<div class="remove-item remove-${index}">` +
-                        '<img src="assets/icons/remove.svg"/>' +
-                        '<p>Remove item</p>' +
-                    '</div>' +
+                `<div class="remove-item remove-${index}">` +
+                    '<img src="assets/icons/remove.svg"/>' +
+                    '<p>Remove item</p>' +
                 '</div>' +
-            '</div>' +
-        '</div>';
+            '</div>';
+    }
+
+    if ((!isOnlyControl && !isOnlyNameAndManufacture)) {
+        generatedHtml += '</div></div>';
+    }
+
+    return generatedHtml;
 }
 
 function removeControlEvent(event) {
@@ -89,13 +130,19 @@ function removeControlEvent(event) {
 
 function moveToWhitelistEvent(event) {
     const element = event.target.classList.length ? event.target : event.target.parentElement;
-
+    console.log(element.parentElement, 'element');
     if (element.childNodes[0].src.includes('active')) {
         element.children[0].src = 'assets/icons/heart.svg';
-        element.children[1].innerText = 'Move to  Whishlist';
+        element.children[1].innerText = 'Move to Whishlist';
+        if (document.body.offsetWidth < 800){
+            element.parentElement.style.maxWidth = '281px';
+        }
     } else {
         element.children[0].src = 'assets/icons/heart-active.svg'
-        element.children[1].innerText = 'Remove from  Whishlist';
+        element.children[1].innerText = 'Remove from Whishlist';
+        if (document.body.offsetWidth < 800){
+            element.parentElement.style.maxWidth = '314px';
+        }
     }
 }
 
@@ -122,8 +169,9 @@ function itemsCountChangeEvent(event) {
         localStorage.setItem('cartItems', JSON.stringify(cartItems.map(item => JSON.stringify(item))))
         getItemsAndGenerateHTML();
         setTimeout(() => {
-            const newGeneratedInput = cartItemsContainerTag.childNodes[index]
-                .childNodes[4].childNodes[0].childNodes[0];
+            const newGeneratedInput = document.body.offsetWidth > 800
+            ? cartItemsContainerTag.childNodes[index].childNodes[4].childNodes[0].childNodes[0]
+            : cartItemsContainerTag.children[index].children[0].children[0].children[1].childNodes[3].childNodes[1];
             newGeneratedInput.focus()
             newGeneratedInput.setSelectionRange(value.toString().length, value.toString().length);
         })
