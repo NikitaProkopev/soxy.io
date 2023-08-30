@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Checkout</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/fonts.css">
+  <link rel="stylesheet" href="styles/checkout.css">
+  <link rel="stylesheet" href="styles/payment.css">
+  <meta name="viewport" content="width=device-width"/>
+</head>
+<body>
+<include src="./header.html"></include>
+<div class="page-wrapper">
+  <div>
+    <h1 class="checkout-title" id="cart-title">Checkout</h1>
+    <div class="mobile">
+      <a href="/soxy.io/cart.html" class="return-link">
+        <img src="assets/icons/chevron-left.svg" alt="chevron-alt">
+        <span>Return to cart</span>
+      </a>
+    </div>
+    <div class="checkout-content">
+      <div class="checkout-form">
+        <p>
+          <span>shipping details</span>
+          <img src="assets/icons/chevron-right.svg" alt="">
+          <span>Payment</span>
+        </p>
+        <form class="payment-form">
+          <div class="cards two-column-input">
+            <div class="credit-card">
+              <div>
+                <img src="assets/icons/credit-card.svg">
+              </div>
+              <p>Credit Card</p>
+            </div>
+            <div class="cards-variants">
+              <img src="assets/icons/visa.svg" alt="visa">
+              <img src="assets/icons/mastercard.svg" alt="mastercard">
+              <img src="assets/icons/maestro.svg" alt="maestro">
+            </div>
+          </div>
+          <div class="input-wrapper two-column-input">
+            <label for="card-number">Card number</label>
+            <input type="text" placeholder="0000 0000 0000 0000" id="card-number" name="card-number">
+          </div>
+          <div class="input-wrapper two-column-input">
+            <label for="cardholder-name">Cardholder name</label>
+            <input type="text" placeholder="Name on card" id="cardholder-name" name="cardholder-name">
+          </div>
+          <div class="input-wrapper">
+            <label for="expiration-date">Expiration date</label>
+            <input type="text" placeholder="MM / YY" id="expiration-date" name="expiration-date">
+          </div>
+          <div class="input-wrapper">
+            <label for="security-code">Security code</label>
+            <input type="text" placeholder="CVV" id="security-code" name="security-code">
+            <div class="question">
+              <div class="question-wrapper"><img src="assets/icons/question.svg" alt=""></div>
+            </div>
+          </div>
+        </form>
+        <div class="form-control two-column-input desktop">
+          <div>
+            <a href="/soxy.io/cart.html" class="return-link">
+              <img src="assets/icons/chevron-left.svg" alt="chevron-alt">
+              <span>Return to shipping</span>
+            </a>
+          </div>
+          <button class="button">Place order</button>
+        </div>
+
+      </div>
+      <div>
+        <p class="summary-title">SUMMARY</p>
+        <div id="checkout-summary-content">
+
+        </div>
+        <div class="summary-info">
+          <div>
+            <p class="name">Subtotal</p>
+            <p class="price" id="subtotal">$0.00</p>
+          </div>
+          <div>
+            <p class="name">Handling & duties</p>
+            <p class="price">$0</p>
+          </div>
+          <div>
+            <p class="name">Shipping</p>
+            <p class="price">$0</p>
+          </div>
+          <div>
+            <p class="name">Tax</p>
+            <p class="price">$0</p>
+          </div>
+        </div>
+        <div class="summary-total">
+          <p>Total</p>
+          <p id="total">$0.00</p>
+        </div>
+        <div class="mobile">
+          <button class="button" type="button">Continue to payment</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="mobile">
+  <div class="additional-info">
+    <div>
+      <div class="additional-item">
+        <div>
+          <img src="assets/icons/bank-card.svg" alt="bank-card">
+        </div>
+        <h1 class="title">Secure Shopping</h1>
+        <p class="text">
+          We use stripe as a payment processor, which meets the credit
+          card industry's rigorous PCI security standards
+        </p>
+      </div>
+      <div class="additional-item">
+        <div>
+          <img src="assets/icons/shield.svg" alt="shield">
+        </div>
+        <h1 class="title">Privacy Protection</h1>
+        <p class="text">Your privacy and security is our number-one priority</p>
+      </div>
+      <div class="additional-item">
+        <div>
+          <img src="assets/icons/message.svg" alt="message">
+        </div>
+        <h1 class="title">Best Customer Support</h1>
+        <p class="text">
+          Our friendly customer support team is always available
+          to help answer any questions you may have
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<include src="./footer.html"></include>
+<script src="scripts/include.js"></script>
+<script src="scripts/checkout-summary.js"></script>
+</body>
+</html>
+</body>
+</html>

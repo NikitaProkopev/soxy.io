@@ -135,5 +135,9 @@
         font-size: 14px;
         margin-bottom: 120px;
     }
+
+    .footer-wrapper {
+        width: 100%;
+    }
 }
 
