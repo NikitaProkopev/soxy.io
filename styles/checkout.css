@@ -259,4 +259,8 @@ header.header {
         margin-bottom: 120px;
     }
 
+    .summary-title {
+        margin-top: 40px;
+    }
+
 }
