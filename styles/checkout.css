@@ -1,0 +1,262 @@
+.checkout-title {
+    font-size: 2em;
+    margin-bottom: 2.275em;
+}
+
+.checkout-content {
+    display: grid;
+    grid-template-columns: 1fr 21.25em;
+    gap: 10em;
+    margin-bottom: 6.25em;
+}
+
+.checkout-form > p > span {
+    font-size: 0.875em;
+    text-transform: uppercase;
+}
+
+.checkout-form > p > img {
+    height: 1.25em;
+    width: 1.25em;
+}
+
+.checkout-form > p > span:first-child {
+    font-weight: 500;
+    color: #111;
+}
+
+.checkout-form > p > span:last-child {
+    font-weight: 400;
+    color: #8D8D8D;
+}
+
+.checkout-form > p {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    margin-bottom: 2.5em;
+}
+
+.checkout-form > form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5em 2em;
+}
+
+.checkout-form > form input {
+    width: 100%;
+    font-size: 0.875em;
+    padding: 0.875em 1em;
+    box-sizing: border-box;
+    border: 1px solid #DCDCDC;
+    outline: none;
+}
+
+.checkout-form > form label {
+    margin-bottom: 0.5em;
+    display: block;
+    font-size: 0.85em;
+}
+
+.two-column-input {
+    grid-column: 1 / 3;
+}
+
+.summary-title {
+    border: none;
+}
+
+.summary-item img {
+    width: 3.75em;
+    height: 5.75em;
+}
+
+.summary-item {
+    display: flex;
+    gap: 1em;
+}
+
+.summary-separator {
+    height: 1px;
+    background: #DCDCDC;
+    margin: 1.25em 0;
+}
+
+.summary-info {
+    padding-top: 0;
+}
+
+.summary-item > div > p, .summary-item > div > p > span {
+    font-size: 0.875em;
+    font-weight: 400;
+}
+
+.summary-item .name {
+    font-weight: 500;
+    margin-bottom: 0.25em;
+}
+
+.summary-item > div > .item-parameters {
+    display: flex;
+    gap: 1em;
+    margin-top: 0.5em;
+    margin-bottom: 0.75em;
+}
+
+.summary-item > div > .item-parameters span {
+    font-size: 0.875em;
+}
+
+.summary-item > div > .item-parameters .name {
+    color: #8B8B8B;
+    padding-right: 0.35em;
+}
+
+.summary-item .price {
+    font-weight: 500;
+}
+
+.form-control {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0.5em;
+}
+
+.form-control input {
+    max-width: 17.75em;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.return-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 500;
+    gap: 0.5em;
+}
+
+.return-link span {
+    font-size: 1em;
+}
+
+.return-link img {
+    height: 1.5em;
+    width: 1.5em;
+}
+
+header.header {
+    padding-bottom: 0;
+    margin-bottom: 2.5em;
+}
+
+@media (max-width: 800px) {
+    .checkout-title {
+        font-size: 24px;
+        margin-bottom: 24px;
+    }
+
+    .checkout-content {
+        display: block;
+    }
+
+    .checkout-form > p > span {
+        font-size: 14px;
+    }
+
+    .checkout-form > p > img {
+        height: 20px;
+        width: 20px;
+    }
+
+    .checkout-form > form {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .two-column-input {
+        grid-column: 1
+    }
+
+    .checkout-form > p {
+        gap: 10px;
+        margin-bottom: 40px;
+    }
+
+    .checkout-form > form label {
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+
+    .checkout-form > form input {
+        font-size: 14px;
+        padding: 14px 16px;
+    }
+
+    .return-link {
+        justify-content: start;
+        margin-bottom: 32px;
+        gap: 8px;
+    }
+
+    .return-link img {
+        height: 24px;
+        width: 24px;
+    }
+
+    .return-link span {
+        font-size: 16px;
+    }
+
+    .page-wrapper {
+        display: block;
+        padding: 0 16px;
+    }
+
+    .page-wrapper div {
+        width: 100%;
+    }
+
+    .summary-item img {
+        width: 76px;
+        height: 92px;
+    }
+
+    .summary-separator {
+        margin: 24px 0;
+    }
+
+    .summary-item > div > p, .summary-item > div > p > span {
+        font-size: 14px;
+    }
+
+    .summary-item .name {
+        margin-bottom: 4px;
+    }
+
+    .summary-item > div > .item-parameters {
+        margin-top: 8px;
+        margin-bottom: 12px;
+        gap: 16px;
+    }
+
+    .summary-item > div > .item-parameters span {
+        font-size: 14px;
+        font-weight: 300;
+    }
+
+    .summary-item {
+        gap: 16px;
+    }
+
+    .button {
+        width: 100%;
+        padding: 14px 0;
+        font-size: 14px;
+        margin-bottom: 120px;
+    }
+
+}

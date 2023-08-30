@@ -33,41 +33,6 @@ body > .header {
     margin-bottom: 2.5em;
 }
 
-.additional-info {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--light-gray);
-    height: 18.75em;
-}
-
-.additional-info > div {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 8.75em;
-    width: 70.75em;
-}
-
-.additional-item > p, .additional-item > h1 {
-    text-align: center;
-}
-
-.additional-item > div {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 1em;
-}
-
-.additional-info .title {
-    font-size: 1.25em;
-    margin-bottom: 0.75em;
-}
-
-.additional-item > div > img {
-    height: 3.25em;
-    width: 3.25em;
-}
-
 #cart-with-items {
     display: none;
     margin-bottom: 7.75em;
@@ -194,44 +159,6 @@ p.value.count input {
     border: 1px solid #DCDCDC;
     outline: none;
     transform:translateY(-0.8125em);
-}
-
-.summary-title {
-    font-size: 1em;
-    font-weight: 500;
-    padding-bottom: 1.25em;
-    border-bottom: 1px solid #DCDCDC;
-}
-
-.summary-info {
-    padding: 1.25em 0;
-    border-bottom: 1px solid #DCDCDC;
-}
-
-.summary-info div {
-    display: flex;
-    justify-content: space-between;
-    font-size: 1em;
-}
-
-.summary-info div:not(:last-child) {
-    margin-bottom: 1.5em;
-}
-
-.summary-total {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 1.25em;
-    margin-bottom: 2em;
-}
-
-.summary-total p {
-    font-weight: 900;
-}
-
-.summary-button {
-    width: 100%;
-    cursor: pointer;
 }
 
 input::-webkit-outer-spin-button,
@@ -376,56 +303,5 @@ input[type=number] {
         width: 100%;
     }
 
-    .summary-title, .summary-info div p, .summary-total p {
-        font-size: 16px;
-    }
-
-    .summary-title {
-        margin-bottom: 20px;
-        padding-bottom: 20px;
-    }
-
-    .summary-info div:not(:last-child) {
-        margin-bottom: 24px;
-    }
-
-    .summary-info {
-        padding: 20px 0;
-    }
-
-    .summary-total {
-        margin-top: 20px;
-        margin-bottom: 32px;
-    }
-
-    .summary-button {
-        padding: 20px 0;
-        font-size: 16px;
-    }
-
-    .additional-info > div {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 60px;
-    }
-
-    .additional-info {
-        height: initial;
-        padding: 80px 53px;
-    }
-
-    .additional-item > div > img {
-        height: 52px;
-        width: 52px;
-    }
-
-    .additional-item > p {
-        font-size: 16px;
-    }
-
-    .additional-info .title {
-        font-size: 20px;
-        margin-bottom: 12px;
-    }
 }
 

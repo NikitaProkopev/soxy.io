@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/fonts.css">
+    <link rel="stylesheet" href="styles/checkout.css">
+    <meta name="viewport" content="width=device-width"/>
+</head>
+<body>
+    <include src="./header.html"></include>
+    <div class="page-wrapper">
+        <div>
+            <h1 class="checkout-title" id="cart-title">Checkout</h1>
+            <div class="mobile">
+                <a href="/soxy.io/cart.html" class="return-link">
+                    <img src="assets/icons/chevron-left.svg" alt="chevron-alt">
+                    <span>Return to cart</span>
+                </a>
+            </div>
+            <div class="checkout-content">
+                <div class="checkout-form">
+                    <p>
+                        <span>shipping details</span>
+                        <img src="assets/icons/chevron-right.svg" alt="">
+                        <span>Payment</span>
+                    </p>
+                    <form>
+                        <div class="input-wrapper">
+                            <label for="first-name">First Name*</label>
+                            <input id="first-name" name="first-name" type="text" placeholder="First Name" required>
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="last-name">Last Name*</label>
+                            <input type="text" id="last-name" name="last-name" placeholder="Last Name" required>
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="email">Email*</label>
+                            <input type="text" name="email" id="email" placeholder="Email" required>
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="company-name">Company name (optional)</label>
+                            <input type="text" placeholder="Company name" id="company-name" name="company-name">
+                        </div>
+                        <div class="input-wrapper two-column-input">
+                            <label for="address-line-1">Address Line 1*</label>
+                            <input type="text" placeholder="Address Line 1" name="address-line-1" id ="address-line-1" required>
+                        </div>
+                        <div class="input-wrapper two-column-input">
+                            <label for="address-line-2">Address Line 2 (optional)</label>
+                            <input type="text" placeholder="Address Line 2" name="address-line-2" id="address-line-2">
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="country">Country</label>
+                            <input type="text" placeholder="Country" id="country" name="country" required>
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="state-province">State / Province*</label>
+                            <input type="text" placeholder="State / Province" name="state-province" id="state-province" required>
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="town-city">Town / City*</label>
+                            <input type="text" placeholder="Town / City" id="town-city" name="town-city" required>
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="zip-postcode">ZIP / Postcode*</label>
+                            <input type="text" placeholder="ZIP / Postcode" id="zip-postcode" name="zip-postcode" required>
+                        </div>
+                        <div class="input-wrapper two-column-input">
+                            <label for="phone-number">Phone Number*</label>
+                            <input type="text" placeholder="Phone Number" id="phone-number" name="phone-number" required>
+                        </div>
+                        <div class="form-control two-column-input desktop">
+                            <div>
+                                <a href="/soxy.io/cart.html" class="return-link">
+                                    <img src="assets/icons/chevron-left.svg" alt="chevron-alt">
+                                    <span>Return to cart</span>
+                                </a>
+                            </div>
+                            <input class="button" type="button" value="Continue to payment">
+                        </div>
+                    </form>
+                </div>
+                <div>
+                    <p class="summary-title">SUMMARY</p>
+                    <div id="checkout-summary-content">
+
+                    </div>
+                    <div class="summary-info">
+                        <div>
+                            <p class="name">Subtotal</p>
+                            <p class="price" id="subtotal">$0.00</p>
+                        </div>
+                        <div>
+                            <p class="name">Handling & duties</p>
+                            <p class="price">$0</p>
+                        </div>
+                        <div>
+                            <p class="name">Shipping</p>
+                            <p class="price">$0</p>
+                        </div>
+                        <div>
+                            <p class="name">Tax</p>
+                            <p class="price">$0</p>
+                        </div>
+                    </div>
+                    <div class="summary-total">
+                        <p>Total</p>
+                        <p id="total">$0.00</p>
+                    </div>
+                    <div class="mobile">
+                        <button class="button" type="button">Continue to payment</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile">
+        <div class="additional-info">
+            <div>
+                <div class="additional-item">
+                    <div>
+                        <img src="assets/icons/bank-card.svg" alt="bank-card">
+                    </div>
+                    <h1 class="title">Secure Shopping</h1>
+                    <p class="text">
+                        We use stripe as a payment processor, which meets the credit
+                        card industry's rigorous PCI security standards
+                    </p>
+                </div>
+                <div class="additional-item">
+                    <div>
+                        <img src="assets/icons/shield.svg" alt="shield">
+                    </div>
+                    <h1 class="title">Privacy Protection</h1>
+                    <p class="text">Your privacy and security is our number-one priority</p>
+                </div>
+                <div class="additional-item">
+                    <div>
+                        <img src="assets/icons/message.svg" alt="message">
+                    </div>
+                    <h1 class="title">Best Customer Support</h1>
+                    <p class="text">
+                        Our friendly customer support team is always available
+                        to help answer any questions you may have
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <include src="./footer.html"></include>
+    <script src="scripts/include.js"></script>
+    <script src="scripts/checkout-summary.js"></script>
+</body>
+</html>
