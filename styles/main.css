@@ -1,14 +1,15 @@
 .sections-wrapper {
     display: flex;
     justify-content: center;
+    padding: 0 16px;
 }
 
 .sections {
-    width: 77.5em; /* 1240px */
+    width: 1260px;
 }
 
 section {
-    margin-bottom: 6.25em; /* 100px */
+    margin-bottom: 140px;
 }
 
 section img {
@@ -16,8 +17,9 @@ section img {
 }
 
 .first-section {
-    display: flex;
+    display: grid;
     gap: var(--default-gap);
+    grid-template-columns: 1fr 1fr;
 }
 
 .first-section .left-side {
@@ -25,37 +27,33 @@ section img {
     gap: var(--default-gap);
 }
 
-.first-section .left-side div, .first-section .left-side div img {
-    width: 21.25em /* 340px */;
-}
-
 .section-text {
-    margin-top: 0.75em;
+    margin-top: 12px;
 }
 
 .title-text {
-    margin-top: 1em;
+    margin-top: 16px;
     font-weight: 400;
 }
 
 .right-side > div {
     display: flex;
     align-items: center;
-    gap: 1em;
+    gap: 16px;
 }
 
 .right-side div img {
-    max-width: 11.25em;
+    max-width: 190px;
 }
 
 .right-side {
     display: flex;
     flex-direction: column;
-    gap: 1.5em;
+    gap: 24px;
 }
 
 .right-side .section-text {
-    font-size: 1.125em;
+    font-size: 18px;
 }
 
 .second-section > .scrolling-content {
@@ -67,15 +65,15 @@ section img {
 }
 
 .second-section > .scrolling-content > div {
-    min-width: 22.75em; /* 364px */
+    min-width: 364px;
 }
 
 .second-section > .scrolling-content  > div > img {
     width: 100%;
-    height: 27.9375em; /* 447px */
+    height: 447px;
 }
 #second-section-wrapper {
-    height: 33.125em /* 530px */
+    height: 530px;
 }
 
 .scrolling-section-wrapper {
@@ -94,7 +92,7 @@ section img {
 }
 
 .product-name, .product-price {
-    margin-top: 0.5em;
+    margin-top: 8px;
 }
 
 .product-price {
@@ -111,13 +109,13 @@ section img {
 }
 
 .fourth-section h1 {
-    margin-top: 1em;
-    font-size: 1.625em; /* 26px */
+    margin-top: 12px;
+    font-size: 20px;
 }
 
 .fifth-section img {
-    width: 9.375em; /* 150px */
-    height: 6.75em;
+    width: 150px;
+    height: 108px;
 }
 
 .fifth-section .scrolling-content {
@@ -125,19 +123,20 @@ section img {
     background-color: var(--light-gray);
     overflow: hidden;
     gap: var(--default-gap);
-    padding: 2.875em var(--default-gap); /* 46px */
+    padding: 46px var(--default-gap);
 }
 
 .fifth-section .scrolling-content > div {
     display: flex;
-    gap: 1em;
+    gap: 16px;
     align-items: center;
-    min-width: 28.125em; /* 450px */
+    min-width: 450px;
 }
 
 .fifth-section .scrolling-content h1 {
-    font-size: 1.125em;
-    margin-top: 0.75em;
+    font-size: 18px;
+    line-height: 142.5%;
+    margin-top: 12px;
 }
 
 .fifth-section .scrolling-content .title-text {
@@ -145,7 +144,7 @@ section img {
 }
 
 #fifth-section-wrapper {
-    height: 12.5em; /* 200px */
+    height: 200px; /* 200px */
 }
 
 .sixth-section {
@@ -155,26 +154,23 @@ section img {
 }
 
 .sixth-section h1 {
-    padding-top: 0.75em;
+    padding-top: 12px;
+    font-size: 20px;
 }
 
 .seventh-section {
     display: grid;
     gap: var(--default-gap);
-    grid-template-columns: auto auto;
+    grid-template-columns: 1.8fr 1fr;
 }
 
 .seventh-section .left-side h1 {
-    font-size: 1.625em;
-    margin-top: 1em;
+    font-size: 20px;
+    margin-top: 12px;
 }
 
 .seventh-section .left-side h1, .seventh-section .left-side .title-text {
     text-align: center;
-}
-
-.seventh-section .left-side {
-    width: 49.125em /* 786px */
 }
 
 .seventh-section .right-side > div {
@@ -186,7 +182,7 @@ section img {
 }
 
 .seventh-section {
-    margin-bottom: 8.375em /* 134px */
+    margin-bottom: 140px;
 }
 
 .tranding-text {
@@ -194,11 +190,11 @@ section img {
 }
 
 .tranding-separator {
-    margin-bottom: 5.125em; /* 82px */
+    margin-bottom: 60px;
 }
 
 .eighth-section .separator {
-    margin: 1.5em 0;
+    margin: 24px 0;
     height: 1px;
     background: #DCDCDC;
 }
@@ -211,7 +207,7 @@ section img {
 
 .tranding-item {
     display: flex;
-    gap: 0.75em;
+    gap: 8px;
     flex-direction: column;
 }
 
@@ -222,13 +218,13 @@ section img {
 
 .tranding-item h1{
     font-family: 'Moderat', sans-serif;
-    font-size: 1.5em;
+    font-size: 18px;
     font-weight: 900;
-    line-height: 115%; /* 27.6px */
+    line-height: 115%;
 }
 
 .tranding-item p, .tranding-item a {
-    font-size: 1.125em;
+    font-size: 14px;
     font-weight: 400;
     line-height: 160.5%; /* 28.89px */
 }
@@ -237,27 +233,19 @@ section img {
     font-family: 'Zodiak', sans-serif;
 }
 
-.ninth-section {
-    margin-bottom: 5em;
-}
-
-.ninth-section-category-separator {
-    margin-bottom: 4.1875em; /* 67px */
-}
-
 .brands-section > table {
     width: 100%;
     border-collapse: collapse;
-    margin-bottom: 4.75em /* 76px */;
+    margin-bottom: 60px;
 }
 
 .brands-section > table img {
     width: initial;
-    max-width: 15.625em;
+    max-width: 182px;
 }
 
 .brands-section > table tr td > div{
-    height: 13.125em; /* 210px */
+    height: 210px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -281,10 +269,6 @@ section img {
 
 .brands-section > table tr:last-child td {
     border-bottom: none;
-}
-
-.all-brands-wrapper {
-    margin-bottom: 4.9375em; /* 79px */
 }
 
 .first-part.mobile > div > .images {
@@ -344,10 +328,7 @@ section img {
     }
 }
 
-@media (max-width: 800px) {
-    .sections-wrapper{
-        padding: 0 16px;
-    }
+@media (max-width: 990px) {
     .sections {
         width: 100%;
     }

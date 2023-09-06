@@ -64,7 +64,7 @@ navigationBagTag.onclick = () => {
                         '</div>' +
                     '</div>';
             }
-
+            generatedCartItemsHTML += '<div class="without-mb separator"></div>';
             cartItemsTag.innerHTML = generatedCartItemsHTML;
             cartItemsCountTag.innerText = `(${cartItems.length})`;
             cartTotalPrice.innerText = `\$${cartItems.reduce((accum, item) => accum += item.price * item.count, 0)}`

@@ -220,7 +220,7 @@ header.header {
     to { transform: rotate(0deg ); }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 990px) {
     .categories-content {
         display: block;
     }

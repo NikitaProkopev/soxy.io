@@ -3,17 +3,16 @@
     padding: 0;
     margin: 0;
     font-family: 'Moderat', sans-serif;
-    font-size: 1vw;
 }
 
 :root {
     --light-gray: #F7F7F7;
-    --default-gap: 2.25em;
+    --default-gap: 36px;
 }
 
-h1 {
+h1, h1 > span {
     font-family: 'Zodiak', sans-serif;
-    font-size: 1.25em;
+    font-size: 18px;
     font-weight: 540;
 }
 
@@ -64,14 +63,14 @@ h1 {
 
 .category-separator {
     display: flex;
-    gap: 1.5em;
+    gap: 24px;
     align-items: center;
-    margin-bottom: 3.75em;
+    margin-bottom: 60px;
 }
 
 .category-separator .category-text {
     font-family: 'Zodiak', sans-serif;
-    font-size: 2em;
+    font-size: 32px;
     font-style: normal;
     font-weight: 540;
     line-height: normal;
@@ -193,7 +192,11 @@ html {
 }
 
 
-@media (max-width: 800px) {
+.separator.without-mb {
+    margin-bottom: 0;
+}
+
+@media (max-width: 990px) {
     .mobile {
         display: block !important;
     }

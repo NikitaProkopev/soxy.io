@@ -275,7 +275,7 @@ button.visit-site .desktop {
     color: white;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 990px) {
 
     .main-image {
         grid-column: initial;

@@ -116,7 +116,7 @@ p.description {
     width: 6.75em;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 990px) {
     .page-wrapper > div {
         width: initial;
     }

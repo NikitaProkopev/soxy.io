@@ -172,7 +172,7 @@ input[type=number] {
     -moz-appearance: textfield;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 990px) {
     #cart-with-items > div {
         display: block;
     }

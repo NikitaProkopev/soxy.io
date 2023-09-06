@@ -1,30 +1,27 @@
 .header-wrapper {
-    width: 77.5em; /* 1240px */
+    max-width: 1260px;
+    width: 100%;
 }
 .header {
     display: flex;
     justify-content: center;
-    padding-top: 2.25em;
-    padding-bottom: 2em;
-    margin-bottom: 3.75em;
+    padding: 32px 16px;
+    margin-bottom: 40px;
 }
 .header-logo {
-    text-transform: uppercase;
-    font-size: 2.375em; /* 38px */
-    font-style: normal;
-    font-weight: 900;
-    line-height: 115%; /* 43.7px */
+
 }
 
 .search-icon img {
-    height: 1.5em;
-    width: 1.5em;
+    height: 24px;
+    width: 24px;
 }
 
 .header-wrapper .first-part {
     display: grid;
     grid-template-columns: auto 1fr auto;
-    gap: 2em;
+    align-items: center;
+    gap: 32px;
 }
 
 .header-search {
@@ -35,11 +32,11 @@
     border: none;
     outline: none;
     background-color: var(--light-gray);
-    padding-top: 1.0625em; /* 17px */
-    padding-bottom: 1em;
-    width: 33.75em; /* 540px */
-    padding-left: 0.75em;
-    font-size: 1em;
+    padding-top: 17px;
+    padding-bottom: 16px;
+    width: 100%;
+    padding-left: 12px;
+    font-size: 16px;
     font-weight: 400;
 }
 
@@ -47,32 +44,32 @@
     background-color: var(--light-gray);
     display: flex;
     align-items: center;
-    padding-left: 1em;
+    padding-left: 16px;
 }
 
 .header-navigation {
     display: flex;
-    gap: 1.5em;
+    gap: 24px;
     align-items: center;
 }
 
 .navigation-item {
     text-transform: uppercase;
     text-decoration: none;
-    font-size: 1em;
+    font-size: 14px;
 }
 
 .navigation-wrapper {
     display: flex;
-    gap: 2em;
+    gap: 32px;
 }
 
 .header-wrapper .separator {
     width: 100%;
     height: 1px;
     background: #DCDCDC;
-    margin-top: 2em;
-    margin-bottom: 2em;
+    margin-top: 32px;
+    margin-bottom: 32px;
 }
 
 .second-part {
@@ -82,7 +79,7 @@
 
 .header-categories {
     display: flex;
-    gap: 3.75em;
+    gap: 60px;
 }
 
 .menu-toggle {
@@ -117,11 +114,11 @@
 .cart-container {
     position: absolute;
     z-index: 1000;
-    width: 27.125em;
+    width: 434px;
     background-color: white;
     border: 1px solid #111;
-    transform: translate(calc(-100% + 2em), 10px);
-    padding: 2em;
+    transform: translate(calc(-100% + 16px), 10px);
+    padding: 32px;
 }
 
 .cart-container.closed {
@@ -134,32 +131,32 @@
 
 .cart-header {
     text-align: center;
-    font-size: 0.875em;
+    font-size: 14px;
 }
 
 #cart-items > div:not(.separator) {
     display: flex;
-    gap: 1.25em;
+    gap: 20px;
 }
 #cart-items > div:not(.separator) > img {
-    width: 6.875em;
+    width: 110px;
 }
 #cart-items > div:not(.separator) .name {
     font-weight: 500;
-    font-size: 1em;
-    margin-bottom: 0.5em;
+    font-size: 16px;
+    margin-bottom: 8px;
 }
 
 #cart-items > div:not(.separator) .manufacture {
     font-weight: 400;
-    font-size: 1em;
-    margin-bottom: 1.25em;
+    font-size: 16px;
+    margin-bottom: 20px;
 }
 
 #cart-items > div:not(.separator) .parameters {
     display: flex;
-    gap: 1em;
-    margin-bottom: 1.25em;
+    gap: 16px;
+    margin-bottom: 20px;
 }
 
 #cart-items > div:not(.separator) .parameters > p {
@@ -168,26 +165,26 @@
 
 #cart-items > div:not(.separator) .parameters > p,
 #cart-items > div:not(.separator) .parameters > span {
-    font-size: 0.875em;
+    font-size: 14px;
 }
 
 #cart-items > div:not(.separator) .price {
-    font-size: 1em;
+    font-size: 16px;
     font-weight: 500;
 }
 
 #cart-items .separator {
-    margin: 1.5em 0;
+    margin: 24px 0;
 }
 
 .cart-total {
-    margin: 2em 0;
+    margin: 32px 0;
     display: flex;
     justify-content: space-between;
 }
 
 .cart-total > p {
-    font-size: 1.125em;
+    font-size: 18px;
 }
 
 #cart-total-price {
@@ -215,28 +212,28 @@
 #count-items-in-cart {
     position: absolute;
     background-color: #111111;
-    height: 1em;
-    width: 1em;
+    height: 16px;
+    width: 16px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 1em;
+    border-radius: 16px;
     border: 2px solid white;
-    transform: translate(0.875em, -1.125em);
+    transform: translate(12px, -18px);
 }
 
 #count-items-in-cart > span {
-    font-size: 0.75em;
+    font-size: 12px;
     color: white;
     transform: translateY(-1px);
 }
 
 #navigation-bag {
-    width: 1.5em;
-    height: 1.5em;
+    width: 24px;
+    height: 24px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 990px) {
     .header {
         margin: 0;
         padding: 0;
