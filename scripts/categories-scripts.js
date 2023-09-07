@@ -13,26 +13,6 @@ const filterForms = document.getElementsByClassName('filter-form');
 const appliedFiltersContent =
     window.innerWidth > 800 ? document.getElementById('applied-filters-content')
         : document.getElementById('mobile-applied-filters-content');
-const categoryProducts = document.getElementById('category-products');
-
-function setCountProductColumns() {
-
-    if (document.body.offsetWidth < 1080) {
-        categoryProducts.style.gridTemplateColumns = 'repeat(2, 1fr)';
-    } else if (document.body.offsetWidth < 1340) {
-        categoryProducts.style.gridTemplateColumns = 'repeat(3, 1fr)';
-    } else {
-        categoryProducts.style.gridTemplateColumns = 'repeat(4, 1fr)';
-    }
-
-    const children = categoryProducts.children;
-    for( let i = 0; i < children.length; i++) {
-        children[i].children[0].style.width = children[i].offsetWidth + 'px';
-    }
-
-}
-
-setCountProductColumns();
 
 
 (function hideFilters() {
@@ -163,5 +143,3 @@ function changeSelectedFiltersCount() {
         filtersBlock.classList.replace('opened', 'closed');
     }
 })();
-
-document.body.onresize = setCountProductColumns;
