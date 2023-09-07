@@ -19,7 +19,7 @@ h1, h1 > span {
 .button {
     border: none;
     background: #111;
-    padding: 0.875em 2.5em;
+    padding: 14px 40px;
     color: white;
 }
 
@@ -29,7 +29,7 @@ h1, h1 > span {
 }
 
 .categories-name p, .categories-name span {
-    font-size: 1em;
+    font-size: 16px;
     font-weight: 400;
     color: #8B8B8B;
 }
@@ -43,7 +43,7 @@ h1, h1 > span {
 }
 
 .categories-name span {
-    margin: 0 0.3em;
+    margin: 0 5px;
 }
 
 .page-wrapper {
@@ -81,11 +81,11 @@ h1, h1 > span {
 .category-products {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 4.5em 1.5em;
+    grid-gap: 60px 24px;
 }
 
 .category-products > div > .product-image {
-    width: 14.437em;
+    width: 100%;
 }
 
 .category-products > div > p.author, .category-products > div > p.price {

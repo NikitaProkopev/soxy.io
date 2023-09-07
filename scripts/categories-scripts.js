@@ -16,17 +16,20 @@ const appliedFiltersContent =
 const categoryProducts = document.getElementById('category-products');
 
 function setCountProductColumns() {
-    if (document.body.offsetWidth < 1020) {
+
+    if (document.body.offsetWidth < 1080) {
         categoryProducts.style.gridTemplateColumns = 'repeat(2, 1fr)';
-        return;
-    }
-
-    if (document.body.offsetWidth < 1340) {
+    } else if (document.body.offsetWidth < 1340) {
         categoryProducts.style.gridTemplateColumns = 'repeat(3, 1fr)';
-        return;
+    } else {
+        categoryProducts.style.gridTemplateColumns = 'repeat(4, 1fr)';
     }
 
-    categoryProducts.style.gridTemplateColumns = 'repeat(4, 1fr)';
+    const children = categoryProducts.children;
+    for( let i = 0; i < children.length; i++) {
+        children[i].children[0].style.width = children[i].offsetWidth + 'px';
+    }
+
 }
 
 setCountProductColumns();

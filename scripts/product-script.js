@@ -1,6 +1,7 @@
-
+const colorsVariants = document.getElementById('colors-variants');
 changeActive(document.getElementById('left-side-images'), true);
-changeActive(document.getElementById('colors-variants'));
+changeActive(colorsVariants);
+
 function changeActive(imagesWrapper, isChangeMainImg = false) {
     const imagesArray = [...imagesWrapper.children];
     imagesArray.forEach((img) => {

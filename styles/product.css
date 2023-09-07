@@ -1,23 +1,23 @@
 .categories-name {
-    margin-bottom: 2em;
+    margin-bottom: 32px;
 }
 
 .product-info {
     display: grid;
-    grid-template-columns: 1fr 29.375em;
-    gap: 2em;
-    margin-bottom: 2em;
+    grid-template-columns: 1.58fr 1fr;
+    gap: 32px;
+    margin-bottom: 80px;
 }
 
 .product-images {
     display: grid;
-    grid-template-columns: 6.875em 1fr;
-    gap: 1em;
+    grid-template-columns: 1fr 5.7fr;
+    gap: 16px;
 }
 
 .left-side-images img {
     width: 100%;
-    margin-bottom: 0.75em;
+    margin-bottom: 12px;
 }
 
 .left-side-images img.active {
@@ -29,39 +29,39 @@
 }
 
 .product-title .product-name {
-    font-size: 2em;
+    font-size: 32px;
 }
 
 .product-price .price {
-    font-size: 1.75em;
+    font-size: 28px;
     font-weight: 500;
     letter-spacing: -0.6px;
 }
 
 .product-price {
     display: flex;
-    gap: 1em;
+    gap: 16px;
     align-items: center;
 }
 
 .product-price .cashback {
     background-color: #111111;
     color: white;
-    font-size: 0.875em;
+    font-size: 14px;
     display: flex;
     align-items: center;
-    padding: 0 0.875em;
+    padding: 0 14px 0 11px;
     height: 32px;
 }
 
 .product-title {
-    margin-bottom: 2.5em;
+    margin-bottom: 40px;
 }
 
 .product-details {
     background-color: var(--light-gray);
-    padding: 1em;
-    margin-bottom: 1.875em;
+    padding: 16px;
+    margin-bottom: 40px;
 }
 
 .product-details div span {
@@ -73,7 +73,7 @@
 }
 
 .current-color {
-    margin-bottom: 1.125em;
+    margin-bottom: 16px;
 }
 
 .colors-variants .active{
@@ -82,17 +82,18 @@
 
 .colors-variants {
     display: flex;
-    gap: 0.625em;
+    gap: 10px;
+    flex-wrap: wrap;
 }
 
 .product-colors {
-    margin-bottom: 2.375em;
+    margin-bottom: 40px;
 }
 
 .product-size .text {
-    font-size: 1em;
+    font-size: 16px;
     font-weight: 400;
-    margin-bottom: 1em;
+    margin-bottom: 16px;
 }
 
 .select-size {
@@ -100,77 +101,79 @@
     display: grid;
     grid-template-columns: 1fr auto;
     align-items: center;
-    padding: 1.0625em 1.25em;
+    padding: 17px 16px;
 }
 
 .select-size .current-value {
     text-align: center;
-    font-size: 1.375em;
+    font-size: 22px;
     font-weight: 400;
     line-height: 138%;
 }
 
 .product-size {
-    margin-bottom: 3.25em;
+    margin-bottom: 40px;
 }
 
 .product-cashback {
-    font-size: 1.375em;
+    font-size: 22px;
     font-style: normal;
     font-weight: 900;
     line-height: 115%;
-    margin-bottom: 1.1875em;
+    margin-bottom: 16px;
 }
 
 .shop-now button, .add-to-cart button {
     width: 100%;
-    font-size: 1.125em;
-    padding: 1.375em 0;
+    font-size: 18px;
+    padding: 21px 0;
 }
 
 .price-alert {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 0.5em;
-    margin-top: 2.75em;
+    gap: 8px;
+    margin-top: 24px;
+    padding: 20px 0;
 }
 
 .price-alert p, .or {
-    font-size: 1.125em;
+    font-size: 18px;
     font-weight: 500;
 }
 
 .or {
     text-align: center;
-    margin-top: 2.875em;
+    margin-top: 24px;
 }
 
 .add-to-cart {
-    margin-top: 1.5em;
-    margin-bottom: 2.275em;
+    margin-top: 24px;
+    margin-bottom: 40px;
 
 }
 
 .add-to-cart .description {
     background-color: var(--light-gray);
-    padding: 1.25em;
+    padding: 24px;
 }
 
 .add-to-cart .description .title {
-    font-size: 1.125em;
+    font-size: 18px;
     font-weight: 900;
-    margin-bottom: 0.75em;
+    margin-bottom: 12px;
 }
 
 .add-to-cart .description .text {
-    font-size: 1em;
+    font-size: 16px;
     font-weight: 400;
 }
 
 .section-with-hiding p span {
     font-weight: 900;
-    font-size: 1.125em;
+    font-size: 18px;
+    line-height: 115%;
 }
 
 .section-with-hiding p {
@@ -180,69 +183,71 @@
 }
 
 .product-description {
-    margin-bottom: 1.875em;
+    margin-bottom: 24px;
 }
 
 .compare-across .text {
-    font-size: 1.125em;
+    font-size: 18px;
     font-weight: 900;
     line-height: 115%;
-    margin-bottom: 1em;
+    margin-bottom: 16px;
 }
 
 .compare-across .text span {
     font-weight: 500;
-    font-size: 1em;
+    font-size: 16px;
     line-height: 115%;
 }
 
 .compare-across .price {
-    font-size: 1.125em;
+    font-size: 18px;
     font-weight: 500;
     line-height: 115%;
-    margin-bottom: 1em;
 }
 
 .compare-across {
-    margin-bottom: 2.3125em;
+    margin-bottom: 32px;
 }
 
 .compare-variants > div {
     display: grid;
     grid-template-columns: auto 1fr auto;
     align-items: center;
-    gap:1em;
+    gap: 16px;
 }
 
 .compare-variants > div > img {
-    height: 6.25em;
+    height: 100px;
 }
 
 .compare-variants > div > div .name {
-    margin-bottom: .075em;
+    margin-bottom: 12px;
     color: #0D99FF;
-    font-size: 1.375em;
+    font-size: 16px;
 }
 
 .compare-variants > div > div .price {
-    font-size: 1.5em;
+    font-size: 16px;
     font-weight: 400;
 }
 
 .button.visit-site {
-    padding: 0.875em 2.5em;
-    font-size: 1em;
+    padding: 14px 70px;
+    font-size: 14px;
+    background-color: white;
+    border: 1px solid #111;
+    color: #111;
 }
 
 .compare-variants .separator {
     width: 100%;
     height: 1px;
     background: #DCDCDC;
-    margin: 2em 0;
+    margin: 32px 0;
 }
 
 .compare-variants {
-    margin-bottom: 9.25em;
+    margin-bottom: 140px;
 }
 
 .also-like .category-products {
@@ -250,7 +255,7 @@
 }
 
 .also-like {
-    margin-bottom: 3.875em;
+    margin-bottom: 80px;
 }
 
 .load-more .button-wrapper .button {
@@ -258,7 +263,7 @@
 }
 
 .load-more {
-    margin-bottom: 6.0625em;
+    margin-bottom: 140px;
 }
 
 .main-image {
@@ -267,8 +272,8 @@
 }
 
 .colors-variants img {
-    height: 4.375em;
-    width: 4.375em;
+    height: 70px;
+    width: 70px;
 }
 
 button.visit-site .desktop {
