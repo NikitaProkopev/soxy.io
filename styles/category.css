@@ -1,33 +1,24 @@
-
-header .header-wrapper, footer .footer-wrapper {
-    width: 78.75em; /* 1260px */
-}
-
-header.header {
-    margin-bottom: 1.625em;
-}
-
 .categories-name {
-    margin-bottom: 2.4375em;
+    margin-bottom: 40px;
 }
 
 .categories-content {
     display: grid;
-    grid-template-columns: 15.25em 61.25em;
-    gap: 2.25em;
+    grid-template-columns: 244px 1fr;
+    gap: 36px;
 }
 
 .count-of-products {
-    font-size: 1em;
+    font-size: 16px;
     font-weight: 400;
-    margin-bottom: 2.5em;
+    margin-bottom: 40px;
 }
 
 .filter-title {
-    font-size: 1em;
+    font-size: 16px;
     font-weight: 900;
     line-height: 115%;
-    margin-bottom: 1.25em;
+    margin-bottom: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -36,30 +27,30 @@ header.header {
 .applied-filters-content > div {
     background-color: var(--light-gray);
     display: flex;
-    gap: 0.75em;
+    gap: 12px;
     align-items: center;
-    padding: 0.375em 0.75em;
+    padding: 6px 12px;
 }
 
 .applied-filters-content {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.625em
+    gap: 10px;
 }
 
 .applied-filters-content > div > img {
-    height: 0.75em;
-    width: 0.75em;
+    height: 12px;
+    width: 12px;
 }
 
 .filter-group {
-    margin-bottom: 2.5em;
+    margin-bottom: 40px;
 }
 
 .filter-group > div > div:not(:last-child),
 .filter-group > form > div:not(:last-child),
 .filter-group-content > div:not(:last-child){
-    margin-bottom: 0.75em;
+    margin-bottom: 12px;
 }
 
 .filter-group > div, .filter-group > form, .filter-group-content {
@@ -83,9 +74,9 @@ header.header {
 .brands-search {
     display: flex;
     background-color: var(--light-gray);
-    gap: 0.75em;
-    padding: 0.75em 0 0.75em 1em;
-    margin-bottom: 1.5em;
+    gap: 12px;
+    padding: 12px 0 12px 16px;
+    margin-bottom: 24px;
 }
 
 .brands-search input {
@@ -93,7 +84,7 @@ header.header {
     outline: none;
     background-color: var(--light-gray);
     width: 100%;
-    padding-right: 1em;
+    padding-right: 16px;
     box-sizing: border-box;
 }
 
@@ -101,13 +92,13 @@ header.header {
     position: absolute;
     opacity: 0;
     cursor: pointer;
-    height: 1.25em;
-    width: 1.25em;
+    height: 20px;
+    width: 20px;
 }
 
 .checkmark {
-    height: 1.25em;
-    width: 1.25em;
+    height: 20px;
+    width: 20px;
     box-sizing: border-box;
     border: 1px solid #111;
     display: flex;
@@ -119,28 +110,28 @@ header.header {
 }
 
 .checkmark img {
-    margin-left: 0.125em;
-    height: 0.875em;
-    width: 0.875em;
+    margin-left: 2px;
+    height: 14px;
+    width: 14px;
 }
 
 .filter-form .filtering-group{
     justify-content: initial;
-    gap: 0.75em;
+    gap: 12px;
 }
 
 .categories-title {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 1.5em;
+    margin-bottom: 24px;
 }
 
 .categories-title h1 {
-    font-size: 2em;
+    font-size: 32px;
 }
 
 .categories-sorting > p {
-    font-size: 1em;
+    font-size: 16px;
     color: #8B8B8B;
     display: flex;
     align-items: center;
@@ -148,30 +139,30 @@ header.header {
 
 .categories-sorting {
     display: flex;
-    gap: 0.5em;
+    gap: 8px;
 }
 
 .sorting-variants {
     display: flex;
     align-items: center;
-    gap: 0.5em;
+    gap: 8px;
 }
 
 .sorting-variants img {
-    height: 1.5em;
-    width: 1.5em;
+    height: 24px;
+    width: 24px;
 }
 
 .category-products {
-    margin-bottom: 5.25em;
+    margin-bottom: 80px;
 }
 
 .categories-content {
-    margin-bottom: 9.625em;
+    margin-bottom: 140px;
 }
 
 .filter-group div:last-child, .filter-group form:last-child {
-    max-height: 20em;
+    max-height: 1000px;
     -webkit-transition: max-height 0.5s;
     -moz-transition: max-height 0.5s;
     -ms-transition: max-height 0.5s;
