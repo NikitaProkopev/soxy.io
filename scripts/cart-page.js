@@ -172,6 +172,7 @@ function itemsCountChangeEvent(event) {
             const newGeneratedInput = document.body.offsetWidth > 800
             ? cartItemsContainerTag.childNodes[index].childNodes[4].childNodes[0].childNodes[0]
             : cartItemsContainerTag.children[index].children[0].children[0].children[1].childNodes[3].childNodes[1];
+            newGeneratedInput.style.width = value.toString().length * 10 + 'px';
             newGeneratedInput.focus()
             newGeneratedInput.setSelectionRange(value.toString().length, value.toString().length);
         })

@@ -93,22 +93,21 @@ h1, h1 > span {
 }
 
 .category-products > div > p:not(:last-child) {
-    margin-bottom: 0.5em;
+    margin-bottom: 8px;
 }
 
 .category-products > div > p.author {
-    margin-top: 1em;
+    margin-top: 16px;
 }
 
 .heart-wrapper {
-    width: 14.437em;
     display: flex;
     justify-content: right;
     position: absolute;
 }
 
 .heart-wrapper img {
-    transform: translate(-0.75em, 0.75em);
+    transform: translate(12px, 12px);
 }
 
 .mobile {
@@ -120,32 +119,32 @@ html {
 }
 
 .summary-title {
-    font-size: 1em;
+    font-size: 16px;
     font-weight: 500;
-    padding-bottom: 1.25em;
+    padding-bottom: 20px;
     border-bottom: 1px solid #DCDCDC;
 }
 
 .summary-info {
-    padding: 1.25em 0;
+    padding: 20px 0;
     border-bottom: 1px solid #DCDCDC;
 }
 
 .summary-info div {
     display: flex;
     justify-content: space-between;
-    font-size: 1em;
+    font-size: 16px;
 }
 
 .summary-info div:not(:last-child) {
-    margin-bottom: 1.5em;
+    margin-bottom: 24px;
 }
 
 .summary-total {
     display: flex;
     justify-content: space-between;
-    margin-top: 1.25em;
-    margin-bottom: 2em;
+    margin-top: 20px;
+    margin-bottom: 32px;
 }
 
 .summary-total p {
@@ -162,7 +161,8 @@ html {
     justify-content: center;
     align-items: center;
     background-color: var(--light-gray);
-    height: 18.75em;
+    height: 300px;
+    padding: 0 16px;
 }
 
 .additional-item > p, .additional-item > h1 {
@@ -172,24 +172,25 @@ html {
 .additional-item > div {
     display: flex;
     justify-content: center;
-    margin-bottom: 1em;
+    margin-bottom: 16px;
 }
 
 .additional-info .title {
-    font-size: 1.25em;
-    margin-bottom: 0.75em;
+    font-size: 20px;
+    margin-bottom: 12px;
 }
 
 .additional-item > div > img {
-    height: 3.25em;
-    width: 3.25em;
+    height: 52px;
+    width: 52px;
 }
 
 .additional-info > div {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 8.75em;
-    width: 70.75em;
+    gap: 140px;
+    max-width: 1132px;
+    width: 100%;
 }
 
 

@@ -1,23 +1,23 @@
 .checkout-title {
-    font-size: 2em;
-    margin-bottom: 2.275em;
+    font-size: 32px;
+    margin-bottom: 40px;
 }
 
 .checkout-content {
     display: grid;
-    grid-template-columns: 1fr 21.25em;
-    gap: 10em;
-    margin-bottom: 6.25em;
+    grid-template-columns: 2.234fr 1fr;
+    gap: 160px;
+    margin-bottom: 100px;
 }
 
 .checkout-form > p > span {
-    font-size: 0.875em;
+    font-size: 14px;
     text-transform: uppercase;
 }
 
 .checkout-form > p > img {
-    height: 1.25em;
-    width: 1.25em;
+    height: 20px;
+    width: 20px;
 }
 
 .checkout-form > p > span:first-child {
@@ -33,29 +33,29 @@
 .checkout-form > p {
     display: flex;
     align-items: center;
-    gap: 0.5em;
-    margin-bottom: 2.5em;
+    gap: 8px;
+    margin-bottom: 40px;
 }
 
 .checkout-form > form {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1.5em 2em;
+    gap: 24px 32px;
 }
 
 .checkout-form > form input {
     width: 100%;
-    font-size: 0.875em;
-    padding: 0.875em 1em;
+    font-size: 14px;
+    padding: 14px 16px;
     box-sizing: border-box;
     border: 1px solid #DCDCDC;
     outline: none;
 }
 
 .checkout-form > form label {
-    margin-bottom: 0.5em;
+    margin-bottom: 8px;
     display: block;
-    font-size: 0.85em;
+    font-size: 14px;
 }
 
 .two-column-input {
@@ -67,49 +67,50 @@
 }
 
 .summary-item img {
-    width: 3.75em;
-    height: 5.75em;
+    width: 76px;
+    height: 92px;
 }
 
 .summary-item {
     display: flex;
-    gap: 1em;
+    gap: 16px;
 }
 
 .summary-separator {
     height: 1px;
     background: #DCDCDC;
-    margin: 1.25em 0;
+    margin: 20px 0;
 }
 
 .summary-info {
     padding-top: 0;
 }
 
-.summary-item > div > p, .summary-item > div > p > span {
-    font-size: 0.875em;
+.summary-item > div > p,
+.summary-item > div > p > span {
+    font-size: 14px;
     font-weight: 400;
 }
 
 .summary-item .name {
     font-weight: 500;
-    margin-bottom: 0.25em;
+    margin-bottom: 4px;
 }
 
 .summary-item > div > .item-parameters {
     display: flex;
-    gap: 1em;
-    margin-top: 0.5em;
-    margin-bottom: 0.75em;
+    gap: 16px;
+    margin-top: 8px;
+    margin-bottom: 12px;
 }
 
 .summary-item > div > .item-parameters span {
-    font-size: 0.875em;
+    font-size: 14px;
 }
 
 .summary-item > div > .item-parameters .name {
     color: #8B8B8B;
-    padding-right: 0.35em;
+    padding-right: 4px;
 }
 
 .summary-item .price {
@@ -120,12 +121,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 0.5em;
+    padding-top: 8px;
 }
 
 .form-control input {
-    max-width: 17.75em;
-    font-size: 1em;
+    max-width: 364px;
+    font-size: 14px;
     font-weight: 500;
 }
 
@@ -134,23 +135,29 @@
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    font-size: 1em;
+    font-size: 16px;
     font-weight: 500;
-    gap: 0.5em;
+    gap: 8px;
 }
 
 .return-link span {
-    font-size: 1em;
+    font-size: 16px;
 }
 
 .return-link img {
-    height: 1.5em;
-    width: 1.5em;
+    height: 24px;
+    width: 24px;
 }
 
 header.header {
     padding-bottom: 0;
-    margin-bottom: 2.5em;
+    margin-bottom: 40px;
+}
+
+@media (max-width: 1500px) {
+    .checkout-content {
+        gap: 80px;
+    }
 }
 
 @media (max-width: 990px) {

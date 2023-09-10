@@ -1,32 +1,32 @@
 .subtitle {
-    font-size: 1em;
+    font-size: 16px;
     font-weight: 400;
-    margin-bottom: 0.75em;
+    margin-bottom: 12px;
 }
 
 .first-title {
-    font-size: 2.25em;
-    margin-bottom: 2rem;
+    font-size: 36px;
+    margin-bottom: 32px;
 }
 
 .blog-details-wrapper > div {
-    max-width: 48.75em;
+    max-width: 780px;
 }
 
 .blog-details-wrapper {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 5em;
+    gap: 80px;
 }
 
 .image-wrapper {
-    margin-bottom: 2em;
+    margin-bottom: 32px;
 }
 
 .image-description {
-    margin-top: 1em;
+    margin-top: 16px;
     text-align: right;
-    font-size: 0.75em;
+    font-size: 12px;
     font-weight: 400;
 }
 
@@ -35,41 +35,41 @@
 }
 
 p.description {
-    font-size: 1em;
-    line-height: 1.625em;
+    font-size: 16px;
+    line-height: 26px;
 }
 
 .description-wrapper > p {
-    line-height: 1.625em;
+    line-height: 26px;
 }
 
 .additional-blog-info .title{
-    font-size: 1.75em;
-    margin-bottom: 2rem;
+    font-size: 28px;
+    margin-bottom: 32px;
 }
 
 .additional-blog-info > .image-wrapper > img {
-    width: 36.625em;
+    width: 570px;
 }
 
 .description-wrapper {
     display: grid;
-    gap: 1.5em;
+    gap: 24px;
 }
 
 .blog-details-wrapper {
-    margin-bottom: 7.5em;
+    margin-bottom: 120px;
 }
 
 .popular-reads-wrapper {
     background-color: var(--light-gray);
-    padding-top: 7.5em;
-    padding-bottom: 7.5em;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .popular-reads-title h1 {
-    font-size: 2em;
-    width: 9.1em;
+    font-size: 32px;
+    white-space: nowrap;
 }
 
 .popular-reads-title .separator {
@@ -80,29 +80,30 @@ p.description {
 
 .popular-reads-title {
     display: flex;
-    gap: 1.5em;
+    gap: 24px;
     align-items: center;
-    margin-bottom: 2.5em;
+    margin-bottom: 40px;
 }
 
 .popular-content {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 3.75em 2.25em;
+    gap: 60px 36px;
 }
 
 .popular-content > div {
     display: flex;
-    gap: 1em;
+    gap: 16px;
 }
 
 .popular-description > p {
-    margin-bottom: 0.75em;
-    font-size: 1em;
+    margin-bottom: 12px;
+    font-size: 16px;
 }
 
 .popular-description > h1 {
-    font-size: 1em;
+    font-size: 16px;
+    line-height: 140%;
 }
 
 .popular-description {
@@ -112,8 +113,8 @@ p.description {
 }
 
 .popular-content > div > img {
-    height: 6.25em;
-    width: 6.75em;
+    height: 100px;
+    width: 108px;
 }
 
 @media (max-width: 990px) {
