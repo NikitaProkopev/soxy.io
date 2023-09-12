@@ -130,7 +130,6 @@ function changeSelectedFiltersCount() {
 
 
     mobileFiltersBlock.onclick = function () {
-        const footer = document.getElementById('footer');
         if (filtersBlock.classList.contains('closed')) {
             filtersBlock.classList.replace('closed', 'opened');
         } else {
@@ -139,7 +138,6 @@ function changeSelectedFiltersCount() {
     }
 
     document.getElementById('close-filters').onclick = function () {
-        const footer = document.getElementById('footer');
         filtersBlock.classList.replace('opened', 'closed');
     }
 })();

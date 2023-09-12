@@ -173,6 +173,11 @@ input[type=number] {
 }
 
 @media (max-width: 990px) {
+
+    .summary-info {
+        padding-top: 0;
+    }
+
     #cart-with-items > div {
         display: block;
     }

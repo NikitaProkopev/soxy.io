@@ -124,7 +124,12 @@ function removeControlEvent(event) {
         cartItems.splice(index, 1);
         localStorage.setItem('cartItems', JSON.stringify(cartItems.map(item => JSON.stringify(item))))
         getItemsAndGenerateHTML();
-        countItemsInCartTag.children[0].innerText = cartItems.length;
+        if (cartItems.length) {
+            countItemsInCartTag.style.display = 'flex';
+            countItemsInCartTag.children[0].innerText = cartItems.length;
+        } else {
+            countItemsInCartTag.style.display = 'none';
+        }
     }
 }
 

@@ -167,6 +167,7 @@ section img {
 .seventh-section .left-side h1 {
     font-size: 20px;
     margin-top: 12px;
+    line-height: 140%;
 }
 
 .seventh-section .left-side h1, .seventh-section .left-side .title-text {
@@ -342,8 +343,9 @@ section img {
     }
 
     .section-text {
-        font-size: 24px;
+        font-size: 20px;
         margin-top: 8px;
+        line-height: 140%;
     }
 
     .first-section .right-side, .first-section .right-side div {
@@ -416,12 +418,17 @@ section img {
 
     .fourth-section h1 {
         margin-top: 8px;
-        font-size: 24px;
+        font-size: 20px;
+        line-height: 140%;
     }
 
     .fifth-section img {
         width: 120px;
         height: 82px;
+    }
+
+    .fifth-section .scrolling-content h1 {
+        font-size: 16px;
     }
 
     .fifth-section .scrolling-content > div {

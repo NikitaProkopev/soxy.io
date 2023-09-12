@@ -34,6 +34,8 @@ let cartItems = JSON.parse(localStorage.getItem('cartItems'));
 
 if (cartItems && cartItems.length) {
     countItemsInCartTag.children[0].innerText = cartItems.length;
+} else {
+    countItemsInCartTag.style.display = 'none';
 }
 
 

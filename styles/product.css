@@ -59,7 +59,7 @@
 }
 
 .product-details {
-    background-color: var(--light-gray);
+    background-color: #F0F0F0;
     padding: 16px;
     margin-bottom: 40px;
 }
@@ -97,7 +97,7 @@
 }
 
 .select-size {
-    background-color: var(--light-gray);
+    background-color: #F0F0F0;
     display: grid;
     grid-template-columns: 1fr auto;
     align-items: center;
@@ -155,7 +155,7 @@
 }
 
 .add-to-cart .description {
-    background-color: var(--light-gray);
+    background-color: #F0F0F0;;
     padding: 24px;
 }
 
@@ -280,6 +280,35 @@ button.visit-site .desktop {
     color: white;
 }
 
+.section-with-hiding > div {
+    margin-top: 16px;
+}
+
+.section-with-hiding {
+    overflow: hidden;
+    transition: max-height 0.3s;
+}
+
+.section-with-hiding > p > img {
+    transition: transform 0.3s;
+}
+
+.section-with-hiding.opened {
+    max-height: 100%;
+}
+
+.section-with-hiding.opened > p > img {
+    transform: rotate(0deg);
+}
+
+.section-with-hiding.closed > p > img {
+    transform: rotate(90deg);
+}
+
+.section-with-hiding.closed {
+    max-height: 24px;
+}
+
 @media (max-width: 990px) {
 
     .main-image {
@@ -360,7 +389,7 @@ button.visit-site .desktop {
 
     .product-images-controller div {
         background: #E9E9E9;
-        height: 1px;
+        height: 2px;
         width: 100%;
     }
 
@@ -465,8 +494,11 @@ button.visit-site .desktop {
     }
 
     .shop-now button, .add-to-cart button {
-        padding: 19px 0;
         font-size: 16px;
+        height: 54px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
     }
 
     .price-alert {

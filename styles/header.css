@@ -233,6 +233,11 @@
     height: 24px;
 }
 
+.bag img {
+    height: 24px;
+    width: 24px;
+}
+
 @media (max-width: 990px) {
     .header {
         margin: 0;
