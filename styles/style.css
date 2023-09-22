@@ -107,7 +107,7 @@ h1, h1 > span {
 }
 
 .heart-wrapper img {
-    transform: translate(12px, 12px);
+    transform: translate(-12px, 12px);
 }
 
 .mobile {
