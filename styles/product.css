@@ -4,14 +4,14 @@
 
 .product-info {
     display: grid;
-    grid-template-columns: 1.58fr 1fr;
+    grid-template-columns: 1.2fr 1fr;
     gap: 32px;
     margin-bottom: 80px;
 }
 
 .product-images {
     display: grid;
-    grid-template-columns: 1fr 5.7fr;
+    grid-template-columns: 1.5fr 5.7fr;
     gap: 16px;
 }
 
