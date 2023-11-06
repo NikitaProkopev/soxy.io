@@ -11,7 +11,7 @@
         if (filePath.includes('header.html')) {
             setTimeout(() => {
                 const cartScript = document.createElement("script");
-                cartScript.src = './scripts/cart.js';
+                cartScript.src = './scripts/header.js';
                 document.body.appendChild(cartScript);
             }, 100)
         }

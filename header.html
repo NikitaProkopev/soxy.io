@@ -23,15 +23,6 @@
                     <div id="count-items-in-cart">
                         <span></span>
                     </div>
-                    <div class="cart-container closed" id="cart-container">
-                        <p class="cart-header">YOUR CART <span id="cart-items-count"></span></p>
-                        <div id="cart-items"></div>
-                        <div class="cart-total">
-                            <p>TOTAL</p>
-                            <p id="cart-total-price"></p>
-                        </div>
-                        <a href="/soxy.io/cart.html" class="button">Proceed to checkout</a>
-                    </div>
                     <div id="cart-background"></div>
                 </div>
             </div>
@@ -53,7 +44,7 @@
     <div class="mobile">
         <div class="menu-and-search">
             <div class="menu">
-                <input type="checkbox" class="menu-checkbox">
+                <input type="checkbox" class="menu-checkbox" id="open-mobile-menu">
                 <div class="menu-toggle"></div>
                 <div class="menu-content"></div>
             </div>
@@ -61,11 +52,45 @@
                 <img src="./assets/icons/searh.svg" alt="">
             </div>
         </div>
-        <div class="bag">
+        <div class="logo">
+            <img src="./assets/icons/mobile-logo.svg" alt="mobile-logo">
+        </div>
+        <div class="bag" id="mobile-bag">
             <img src="./assets/icons/bag.svg" alt="">
+        </div>
+    </div>
+    <div class="cart-container closed" id="cart-container">
+        <p class="cart-header">YOUR CART <span id="cart-items-count"></span></p>
+        <div id="cart-items"></div>
+        <div class="cart-total">
+            <p>TOTAL</p>
+            <p id="cart-total-price"></p>
+        </div>
+        <a href="/soxy.io/cart.html" class="button">Proceed to checkout</a>
+    </div>
+    <div id="mobile-menu" class="mobile closed">
+        <div class="close-menu-wrapper">
+            <img src="assets/icons/menu-close.svg" class="close-mobile-menu" id="close-mobile-menu">
         </div>
         <div class="logo">
             <img src="./assets/icons/mobile-logo.svg" alt="mobile-logo">
+        </div>
+        <div class="mobile-navigation">
+            <a href="#" class="navigation-item">Shop</a>
+            <a href="#" class="navigation-item">Magazine</a>
+            <a href="#" class="navigation-item">About</a>
+            <a href="#" class="navigation-item">Help</a>
+        </div>
+        <div class="separator"></div>
+        <div class="header-categories">
+            <a href="#" class="navigation-item">Women</a>
+            <a href="#" class="navigation-item">Men</a>
+            <a href="#" class="navigation-item">Shoes</a>
+            <a href="#" class="navigation-item">Bags</a>
+            <a href="#" class="navigation-item">Home & Living</a>
+            <a href="#" class="navigation-item">Beauty</a>
+            <a href="#" class="navigation-item">Kids</a>
+            <a href="#" class="navigation-item">Brands</a>
         </div>
     </div>
 </header>

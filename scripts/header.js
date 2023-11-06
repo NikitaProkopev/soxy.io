@@ -1,10 +1,15 @@
-const navigationBagTag = document.getElementById('navigation-bag');
+const navigationBagTag = document.body.offsetWidth > 990
+    ? document.getElementById('navigation-bag')
+    : document.getElementById('mobile-bag');
 const cartContainerTag = document.getElementById('cart-container');
 const cartItemsTag = document.getElementById('cart-items');
 const cartItemsCountTag = document.getElementById('cart-items-count');
 const cartTotalPrice = document.getElementById('cart-total-price');
 const cartBackground = document.getElementById('cart-background');
 const countItemsInCartTag = document.getElementById('count-items-in-cart');
+const openMobileMenu = document.getElementById('open-mobile-menu');
+const closeMobileMenu = document.getElementById('close-mobile-menu');
+const mobileMenu = document.getElementById('mobile-menu');
 
 const defaultValues = [
     JSON.stringify({
@@ -40,8 +45,9 @@ if (cartItems && cartItems.length) {
 
 
 navigationBagTag.onclick = () => {
-
+    console.log('navigation click');
     if (cartContainerTag.classList.contains('closed')) {
+        console.log('open');
 
         let cartItems = JSON.parse(localStorage.getItem('cartItems'));
 
@@ -81,6 +87,7 @@ navigationBagTag.onclick = () => {
         return;
     }
 
+    console.log('close');
     cartBackground.style.display = 'none';
     cartContainerTag.classList.replace('opened', 'closed');
 
@@ -89,6 +96,15 @@ navigationBagTag.onclick = () => {
 cartBackground.onclick = function () {
 
     cartBackground.style.display = 'none';
+    console.log('close by background');
     cartContainerTag.classList.replace('opened', 'closed');
 
+}
+
+openMobileMenu.onclick = function () {
+    mobileMenu.classList.replace('closed', 'opened');
+}
+
+closeMobileMenu.onclick = function () {
+    mobileMenu.classList.replace('opened', 'closed');
 }
