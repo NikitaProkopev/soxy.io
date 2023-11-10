@@ -141,3 +141,20 @@ function changeSelectedFiltersCount() {
         filtersBlock.classList.replace('opened', 'closed');
     }
 })();
+
+(function changeSortingVariants(){
+        const sortingVariants = document.getElementById('sorting-variants');
+        const sortingDropdown = document.getElementById('sorting-dropdown-wrapper');
+        let isDropdownOpened = false;
+
+        sortingVariants.onclick = () => {
+            if (isDropdownOpened) {
+                isDropdownOpened = false;
+                sortingDropdown.style.maxHeight = '0';
+            } else {
+                isDropdownOpened = true;
+                sortingDropdown.style.maxHeight = '140px';
+            }
+        }
+    }
+)()

@@ -311,6 +311,10 @@ button.visit-site .desktop {
 
 @media (max-width: 990px) {
 
+    .select-size .current-value {
+        font-size: 16px;
+    }
+
     .main-image {
         grid-column: initial;
         grid-row: initial;
