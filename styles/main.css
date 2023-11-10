@@ -60,8 +60,7 @@ section img {
     display: flex;
     gap: var(--default-gap);
     overflow-x: hidden;
-    padding-left: var(--default-gap);
-    padding-right: var(--default-gap);
+    padding-bottom: 40px;
 }
 
 .second-section > .scrolling-content > div {
@@ -79,6 +78,8 @@ section img {
 .scrolling-section-wrapper {
     width: 100%;
     position: absolute;
+    display: flex;
+    justify-content: center;
 }
 
 .third-section .third-section-content, .ninth-section .ninth-section-content {
@@ -123,7 +124,7 @@ section img {
     background-color: var(--light-gray);
     overflow: hidden;
     gap: var(--default-gap);
-    padding: 46px var(--default-gap);
+    padding: 46px 0;
 }
 
 .fifth-section .scrolling-content > div {
@@ -309,6 +310,53 @@ section img {
 
 .mobile-scrolling-section-wrapper {
     position: absolute;
+    display: flex;
+    justify-content: center;
+}
+
+.scrolling-switcher {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 100%;
+}
+
+.scrolling-switcher-control {
+    padding: 8px;
+}
+.scrolling-switcher-control > div {
+    height: 4px;
+    width: 20px;
+    background-color: #DCDCDC;
+    transition: all 0.3s;
+}
+
+.scrolling-switcher-control.active > div {
+    height: 6px;
+    width: 30px;
+    background-color: #c0c0c0;
+}
+
+.scrolling-control {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.scrolling-content {
+    width: calc(100vw - 90px);
+}
+
+.scrolling-control > div {
+    padding: 12px;
+    color: #6b6b6b;
+    font-size: 24px;
+}
+
+section.scrolling-section {
+    display: flex;
+    justify-content: center;
 }
 
 @media (max-width: 1390px) {
@@ -437,7 +485,7 @@ section img {
 
     .fifth-section .scrolling-content {
         gap: 16px;
-        padding: 40px;
+        padding: 40px 0;
     }
 
     .sixth-section {
@@ -551,6 +599,13 @@ section img {
         width: calc(100vw - 32px);
         transform: translateZ(10px);
         z-index: 1000;
+    }
+}
+
+@media (max-width: 800px) {
+    .mobile-scrolling-section {
+        display: flex;
+        justify-content: center;
     }
 }
 
