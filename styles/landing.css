@@ -217,6 +217,29 @@
     margin-left: 30px;
 }
 
+.additional-product:not(:last-child) {
+    border-bottom: 1px solid #DCDCDC;
+}
+
 .additional-product ul {
     max-width: 530px;
+}
+
+.last-section p {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.last-section p:first-child {
+    margin-bottom: 20px;
+}
+
+.last-section {
+    padding-top: 40px;
+    margin-bottom: 100px;
+    border-top: 2px solid #111;
+}
+
+.second-section {
+    margin-bottom: 0;
 }
