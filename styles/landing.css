@@ -136,12 +136,8 @@
     max-height: 827px;
 }
 
-.first-section > div:hover {
-    border: 2px solid black;
-}
-
 .first-section > div {
-    border: 2px solid white;
+    border: 2px solid black;
     padding: 20px 0;
 }
 
