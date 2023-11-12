@@ -37,3 +37,9 @@
     src: url("../assets/fonts/Zodiak/Zodiak-Bold.otf");
     font-weight: 540;
 }
+
+@font-face {
+    font-family: 'Cabinet Grotesk';
+    src: url("../assets/fonts/CabinetGrotesk/CabinetGrotesk-Bold.otf");
+    font-weight: 800;
+}

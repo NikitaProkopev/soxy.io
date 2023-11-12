@@ -1,0 +1,222 @@
+.page-wrapper > div {
+    width: 1100px
+}
+
+.first-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin-bottom: 100px;
+}
+
+.place-number {
+    position: absolute;
+    transform: translateY(-20px);
+}
+
+.place-number > span {
+    display: inline-block;
+    color: white;
+    background-color: black;
+    padding: 5px 10px;
+    font-family: 'Cabinet Grotesk', sans-serif;
+    font-weight: 800;
+}
+
+.product-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+}
+
+.product-rating {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.product-rating > img {
+    height: 24px;
+    width: 24px;
+}
+
+.product-rating > p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 29px;
+}
+
+.landing-manufacture {
+    height: 50px;
+    width: auto;
+}
+
+.landing-manufacture-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.landing-text-wrapper {
+    text-align: center;
+}
+
+.product-description {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.product-name {
+    font-size: 32px;
+    margin-top: 0;
+}
+
+.landing-discount {
+    color: #111;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 29px;
+}
+
+.landing-discount > span {
+    text-decoration-line: line-through;
+    font-weight: 300;
+}
+
+.off-percent {
+    font-weight: 700;
+    font-size: 44px;
+    text-decoration: underline;
+    padding: 2px;
+    display: inline-block;
+}
+
+.off-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.product-additional-info {
+    display: grid;
+    gap: 8px;
+    padding: 0 10px;
+}
+
+.claim-button {
+    font-size: 18px;
+}
+
+.free-shipping {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.learn-more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.learn-more > img {
+    height: 24px;
+    width: 24px;
+}
+
+.learn-more > p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.first-section > div:first-child, .first-section > div:last-child {
+    margin-top: 40px;
+    max-height: initial;
+}
+
+.first-section > div:not(:first-child), .first-section > div:not(:last-child) {
+    max-height: 827px;
+}
+
+.first-section > div:hover {
+    border: 2px solid black;
+}
+
+.first-section > div {
+    border: 2px solid white;
+    padding: 20px 0;
+}
+
+.landing-title > h1 {
+    font-size: 54px;
+    font-weight: 540;
+    max-width: 715px;
+    margin-bottom: 10px;
+}
+
+.landing-title > p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.landing-title {
+    margin-bottom: 60px;
+    max-width: 892px;
+    padding: 10px;
+}
+
+.second-title {
+    font-size: 32px;
+    font-weight: 540;
+    font-family: 'Zodiak', sans-serif;
+    border-bottom: 1px solid #DCDCDC;
+    padding-bottom: 10px;
+}
+
+.additional-product {
+    display: grid;
+    grid-template-columns: 1fr 2.2fr;
+    gap: 40px;
+    padding: 30px 0;
+}
+
+.additional-product .landing-manufacture {
+    height: 36px;
+}
+
+.additional-product > div:first-child {
+    display: grid;
+    gap: 8px;
+}
+
+.additional-product > div:last-child > div:first-child {
+    display: flex;
+    justify-content: space-between;
+}
+
+.additional-product > div:last-child {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.additional-product .place-number {
+    transform: none;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.additional-product ul li, .additional-product ul li span {
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.additional-product ul li {
+    margin-left: 30px;
+}
+
+.additional-product ul {
+    max-width: 530px;
+}
